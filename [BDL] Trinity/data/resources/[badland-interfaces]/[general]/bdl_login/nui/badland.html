@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <link href="badland.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="actionmenu">
+            
+			<div class="mainContainer">
+                <div id="allLocs">
+                    <div id="firstLoc"> <h1>Hospital</h1> <i class="fas fa-map-marker-alt"></i></div>
+                    <div id="secondLoc"> <h1>Praia</h1> <i class="fas fa-map-marker-alt"></i></div>
+                    <div id="thirdLoc"> <h1>Paleto Bay</h1> <i class="fas fa-map-marker-alt"></i></div>
+                    <div id="fourthLoc"> <h1>Sandy Shores</h1> <i class="fas fa-map-marker-alt"></i></div>
+                    <div id="fifthLoc"> <h1>Aeroporto</h1> <i class="fas fa-map-marker-alt"></i></div>
+                    <div id="sixthLoc"> <h1>Garagem</h1> <i class="fas fa-map-marker-alt"></i></div>
+                </div>
+                <div id="lastLoc" class="menuoption" data-action2="fechar"> 
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p> Última localização ! </p>
+                </div>
+
+                <div class="confirmScreen">
+                    <div class="confirmContainer">
+                        <div class="confirmTitle">
+                            <p> Sample Text </p>
+                        </div>
+                        <div class="borderDiv"></div>
+                        <div class="localImage">
+                            <img class="ilustration" src="https://cdn.discordapp.com/attachments/740912067095035955/787041328738336808/b179363f5f1cf7f5fd3d70b496d0fffd.jpg" alt="">
+                        </div>
+                        <div class="textDescription">
+                            <p> Você irá para o aeroporto internacional de Los Santos, pressione confirmar se você tem certeza ! </p>
+                        </div>
+                        <div class="buttonSection">
+                            <div class="confirmButton" id="hospital" data-action="hospital">
+                                <p> Confirmar </p>
+                            </div>
+                            <div class="cancelButton" id="hospital">
+                                <p> Cancelar </p>
+                            </div>
+
+                            <div class="confirmButton" id="beach" data-action="beach">
+                                <p> Confirmar </p>
+                            </div>
+                            
+
+                            <div class="confirmButton" id="paleto" data-action="paleto">
+                                <p> Confirmar </p>
+                            </div>
+                            
+
+                            <div class="confirmButton" id="sandys" data-action="sandys">
+                                <p> Confirmar </p>
+                            </div>
+                            
+
+                            <div class="confirmButton" id="airport" data-action="airport">
+                                <p> Confirmar </p>
+                            </div>
+                            
+
+                            <div class="confirmButton" id="lsgarage" data-action="lsgarage">
+                                <p> Confirmar </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+		<script src="https://kit.fontawesome.com/3e2d5ff50d.js"></script>
+		<script src="badland.js" type="text/javascript"></script>
+	</body>
+</html>

@@ -1,0 +1,308 @@
+<html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width">
+        <link href="badland.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+        <style>
+			#depositarUI, #sacarUI, #transferirUI, #multarUI, #general, #focus, #waiting, #login
+			{display: none;}
+		</style>
+	</head>
+    <body>
+    	<div class="allScreen" id="focus">
+			<div class="mainContainer" id="general">
+				<div class="titleContainer">
+					<div class="fleecaWaterMark">
+						<img src="https://cdn.discordapp.com/attachments/740912067095035955/766315798717268038/Fleeca-GTAV-Logo.png" alt="Bank">
+					</div>
+					
+						<div class="fleecaTitle">
+							<span id="titleMainMenu"><p>0</p></span>
+						</div>
+					
+					<div class="userOnTitleContainer">
+						<img src="https://cdn.discordapp.com/attachments/740912067095035955/762559541283782696/back_1.png" id="closeMenu">
+					</div>
+				</div>
+				<div class="leftSideContainer">
+					<div class="depositButton">
+						<div class="depositIcon">
+							<i class="fas fa-university"></i>
+						</div>
+						<div class="depositText">
+							<p>Depositar</p>
+						</div>
+					</div>
+
+					<div class="sacarButton">
+						<div class="sacarIcon">
+							<i class="fas fa-hand-holding-usd"></i>
+						</div>
+						<div class="sacarText">
+							<p>Sacar</p>
+						</div>
+					</div>
+
+					<div class="transferButton">
+						<div class="transferIcon">
+							<i class="fas fa-exchange-alt"></i>
+						</div>
+						<div class="transferText">
+							<p>Transferir</p>
+						</div>
+					</div>
+
+					<div class="citationButton">
+						<div class="citationIcon">
+							<i class="fas fa-money-check-alt"></i>
+						</div>
+						<div class="citationText">
+							<p>Multas</p>
+						</div>
+					</div>
+				</div>
+				<div class="walletMoneyCard">
+					<div class="wallet">
+						<h1>Carteira</h1>
+						<img src="https://cdn.discordapp.com/attachments/740912067095035955/766328397869088798/wallet-filled-commercial-tool.png" alt="">
+						<span class="walletBalance">0</span>
+					</div>
+				</div>
+				<div class="bankMoneyCard">
+					<div class="banco">
+						<h1>Conta</h1>
+						<img src="https://cdn.discordapp.com/attachments/740912067095035955/766329950638702612/bank.png" alt="">
+						<span class="balance">0</span>
+					</div>
+				</div>
+				<div class="infoCard">
+					<div class="infoImg">
+						<img src="https://cdn.discordapp.com/attachments/740912067095035955/766351036225945642/mastercard-logo-7.png" alt="">
+					</div>
+					<div class="infoCardNumber">
+						<p> ••••⠀••••⠀••••⠀•••• </p>
+					</div>
+					<div class="infoCardDataName">
+						<div class="nome">
+							<p>Nome</p>
+							<span class="nome">0</span>
+						</div>
+					</div>
+					<div class="infoCardDataValid">
+						<p>Validade</p>
+						<span> 06/28 </span>
+					</div>
+				</div>
+				<div class="infosArrow">
+					<i class="fas fa-arrow-down"></i>
+				</div>
+				<div class="infosClose">
+					<i class="fas fa-times-circle"></i>
+				</div>
+				<div class="userInfos">
+					<div class="userInfosText">
+						<div class="userInfosTitle">
+							<h1>Informações</h1>
+						</div>
+						<div class="userName">
+							<div class="nome">
+								<p>Nome: <span></span></p> <br>
+							</div>
+						</div>
+						<div class="userAge">
+							<div class="idade">
+								<p>Idade: <span></span> </p> <br>
+							</div>
+						</div>
+
+						<div class="userRegister">
+							<div class="documento">
+								<p>Registro: <span></span></p> <br>
+							</div>
+						</div>
+						<div class="userPassport">
+							<div class="identidade">
+								<p>Passaporte: <span></span></p> <br>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="userHistory">
+                    <div class="historySideContainer"></div>
+                    <div class="historyTitle">
+						<p>Histórico de transação</p>
+					</div>
+					<div class="extractContainer">
+						<p id="extrato"></p>
+					</div>
+				</div>
+			
+			</div>
+
+			<div class="loginContainer" id="login">
+				<div class="loginWatermark">
+					<img src="https://cdn.discordapp.com/attachments/740912067095035955/774659928278564884/marca_dagua.png" alt="">
+					<div class="loginUIContainer">
+						<div class="fleecaTitleImage">
+							<img src="https://cdn.discordapp.com/attachments/740912067095035955/766315798717268038/Fleeca-GTAV-Logo.png" alt="">
+							<p> Sistema de Cadastro & Login </p>
+							
+						</div>
+						<div class="loginUserTitle">
+							<p> E-mail </p>
+						</div>
+						<div class="loginPassTitle">
+							<p> Senha (0-32) </p>
+						</div>
+						<div class="loginUsername">
+							<p><span class="loginuser">eduardocorttez-flbank</span></p>
+						</div>
+						<div class="loginPassword">
+							<p>***********</p>
+						</div>
+						<div class="buttonAlign">
+							<div class="loginButton">
+								<p> Entrar </p>
+							</div>
+						</div>
+						<div class="forgotPassword">
+							<p>Esqueci minha senha</p>
+						</div>
+						<div class="backwards">
+							<img src="https://cdn.discordapp.com/attachments/740912067095035955/762559541283782696/back_1.png" alt="">
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+				
+			<div class="makeADeposit" id="depositarUI">
+				<div class="cont-depositar">
+					<div class="fleecaImage">
+						<img src="https://cdn.discordapp.com/attachments/740912067095035955/766315798717268038/Fleeca-GTAV-Logo.png">
+						<p>Depósito Bancário</p>
+					</div>
+					<form id="depositar1">
+						<div class="cont-form-depositar">
+							<div class="form-depositar">
+								<input id="amount" type="number" placeholder="Valor em $">
+							</div>
+						</div>
+						<div class="btns-depositar">
+							<button class="btn-confirmar-deposito" type="submit">
+								<div class="confirmar-depositar">
+									<div class="text-confirmar-depositar">Confirmar</div>
+								</div>
+							</button>
+							<div class="backButtonDeposit" id="back">
+								<img src="https://cdn.discordapp.com/attachments/740912067095035955/762559541283782696/back_1.png">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div class="makeASaque" id="sacarUI">
+				<div class="cont-sacar">
+					<div class="fleecaImage">
+						<img src="https://cdn.discordapp.com/attachments/740912067095035955/766315798717268038/Fleeca-GTAV-Logo.png">
+						<p>Saque Bancário</p>
+					</div>
+					<form id="sacar1">
+						<div class="cont-form-sacar">
+							<div class="form-sacar">
+								<input id="amounts" type="number" placeholder="Valor em $">
+							</div>
+						</div>
+						<div class="btns-sacar">
+							<button class="btn-confirmar-deposito" type="submit">
+								<div class="confirmar-sacar">
+									<div class="text-confirmar-sacar">Confirmar</div>
+								</div>
+							</button>
+							<div class="backButtonSacar" id="back1">
+								<img src="https://cdn.discordapp.com/attachments/740912067095035955/762559541283782696/back_1.png">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div class="makeATransfer" id="transferirUI">
+				<div class="cont-trans">
+					<div class="fleecaImage">
+						<img src="https://cdn.discordapp.com/attachments/740912067095035955/766315798717268038/Fleeca-GTAV-Logo.png">
+						<p>Transferência Bancária</p>
+					</div>
+					<form id="transferir1">
+						<div class="cont-form-trans">
+							<div class="form-trans-to">
+								<input id="to" type="number" placeholder="Passaporte">
+							</div>
+							<div class="form-trans-amount">
+								<input id="amountt" type="number" placeholder="Valor em $">
+							</div>
+						</div>
+						<div class="btns-trans">
+							<button class="btn-confirmar-deposito" type="submit">
+								<div class="confirmar-trans">
+									<div class="text-confirmar-trans">Confirmar</div>
+								</div>
+							</button>
+							<div class="backButtonTrans" id="back2">
+								<img src="https://cdn.discordapp.com/attachments/740912067095035955/762559541283782696/back_1.png">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div class="makeACitation" id="multarUI">
+				<div class="cont-multa">
+					<div class="fleecaImage">
+						<img src="https://cdn.discordapp.com/attachments/740912067095035955/766315798717268038/Fleeca-GTAV-Logo.png">
+						<p>Pagamento de Multas</p>
+					</div>
+					<div class="valorPendente">
+						<p>Valor de multas pendente: <span class="citationBalance">$5000,00 </span></p>
+					</div>
+					<form id="multa1">
+						<div class="cont-form-multa">
+							<div class="form-multa">
+								<input id="amountm" type="number" placeholder="Valor em $">
+							</div>
+						</div>
+						<div class="btns-multa">
+							<button class="btn-confirmar-deposito" type="submit">
+								<div class="confirmar-multa">
+									<div class="text-confirmar-multa">Confirmar</div>
+								</div>
+							</button>
+							<div class="backButtonMulta" id="back3">
+								<img src="https://cdn.discordapp.com/attachments/740912067095035955/762559541283782696/back_1.png">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div class="detailsCitations">
+				
+			</div>
+				
+		</div>
+		
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		
+		<script src="badland.js" type="text/javascript"></script>
+		
+    </body>
+  </html>

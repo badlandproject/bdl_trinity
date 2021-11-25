@@ -1,0 +1,232 @@
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    user-select: none;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 1px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.10);
+    border-radius: 10px;
+}
+
+.mainContainer {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    width: 60vw;
+    height: 35vw;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 0.4vw;
+}
+
+#takeOffBrand {
+    position: absolute;
+    width: 2.2vw;
+    height: 1.7vw;
+    background-color: rgba(255,255,255,0.5);
+    left: 80%;
+    top: 25%;
+    border-radius: 0 0.3vw 0.3vw 0;
+    transition: .5s ease;
+}
+
+#takeOffBrand p {
+    opacity: 0;
+    font-family: Poppins, sans-serif;
+    font-size: 0.95vw;
+    margin-top: -1.5vw;
+    margin-left: 0.35vw;
+    transition: 0.25s;
+}
+
+#takeOffBrand img {
+    opacity: 0.6;
+    margin-top: 0.25vw;
+    margin-left: 0.5vw;
+    width: 1.2vw;
+    transition: .5s ease;
+}
+
+#takeOffBrand:hover {
+    background-color: rgba(255,255,255,0.75);
+    width: 6vw;
+    transition: .5s ease;
+}
+
+#takeOffBrand:hover img {
+    opacity: 0.9;
+    margin-left: 4.5vw;
+    transition: .5s ease;
+}
+
+#takeOffBrand:hover p {
+    opacity: 0.9;
+}
+
+.titleContainer {
+    position: absolute;
+    width: 60vw;
+    height: 4.5vw;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 0.4vw 0.4vw 0 0;
+    border-bottom: 10px solid;
+    border-image-slice: 1;
+    border-width: 1px;
+    border-image-source: linear-gradient(to left, rgba(0,0,0,0) 1%, rgba(255,255,255,0.50) 50%, rgba(0,0,0,0) 99%);
+}
+
+.titleContainer p {
+    font-family: Poppins, sans-serif;
+    font-size: 1.75vw;
+    margin-left: 1vw;
+    margin-top: 1vw;
+    color: rgba(255,255,255,0.8);
+}
+
+.contentContainer {
+    position: absolute;
+    width: 60vw;
+    height: 30.5vw;
+    top: 4.5vw;
+    border-radius: 0 0 0.4vw 0.4vw;
+    background-color: rgba(255,0,0,0.0);
+    overflow: auto;
+}
+
+.itemCard {
+    float: left;
+    width: 14vw;
+    height: 14vw;
+    background-color:rgba(0,0,0,0.5);
+    margin-top: 0.8vw;
+    margin-bottom: 0.4vw;
+    margin-left: 0.8vw;
+    border-radius: 0.3vw;
+    transition: 0.25s;
+}
+
+.cardAlign {
+    margin-top: -0.5vw;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color:rgba(255,0,0,0.0);
+    transition: 0.25s;
+}
+
+.itemImage {
+    margin-top: 0.5vw;
+    transition: 0.25s;
+}
+
+.itemImage img {
+    margin-top: 0.5vw;
+    width: 13vw;
+    height: 13vw;
+    border-radius: 0.3vw;
+    transition: 0.25s;
+}
+
+.imageHoverDetails {
+    position: absolute;
+    margin-top: -13.2vw;
+    margin-left: 0.5vw;
+    width: 13vw;
+    height: 13vw;
+    border-radius: 0.3vw;
+    background-color:rgba(255,0,0,0.0);
+    transition: 0.25s;
+}
+
+.itemCard:hover {
+    background-color: rgba(0,0,0,0.65);
+    transition: 0.25s;
+}
+
+.itemCard:hover img{
+    opacity: 0.5;
+    transition: 0.25s;
+}
+
+.itemTitle {
+    width: 13vw;
+    height: 0;
+    border-radius: 0.3vw 0.3vw 0 0;
+    background-color: rgba(255,255,255,0.9);
+    margin-top: -1.2vw;
+    text-align: center;
+    transition: .4s ease;
+}
+
+.itemTitle p{
+    opacity: 0;
+    line-height: 2vw;
+    font-family: Poppins, sans-serif;
+    font-size: 0.90vw;
+    transition: 0.35s;
+}
+
+.itemCard:hover .itemTitle {
+    height: 2vw;
+    transition: .4s ease;
+}
+
+.itemCard:hover .itemTitle p {
+    opacity: 1;
+    transition: 0.35s;
+}
+
+#doTheAction {
+    opacity: 0;
+    width: 8vw;
+    height: 2vw;
+    background: none;
+    border: 0.15vw solid;
+    border-color: rgba(255,255,255,0.9);
+    border-radius: 0.3vw;
+    margin-left: 2.5vw;
+    margin-top: 4vw;
+    transition: 0.35s;
+    overflow: hidden;
+}
+
+#doTheAction span {
+    
+    line-height: 1.75vw;
+    font-family: Roboto, sans-serif;
+    color: rgba(255,255,255,0.9);
+    font-size: 0.90vw;
+    transition: 0.35s;
+}
+
+#doTheAction:hover {
+    background-color: rgba(255,255,255,0.9);
+}
+
+#doTheAction:hover span {
+    color: rgba(0,0,0,0.9);
+}
+
+.itemCard:hover #doTheAction {
+    opacity: 1;
+    transition: 0.35s;
+}

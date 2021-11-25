@@ -1,0 +1,137 @@
+<!-- ------------------------------------------------------------------------------------------------------
+-- [ PRODUTO ADQUIRIDO EM E&G VENDAS (discord.gg/bABGBEX) ]   											 --
+-- [ DESENVOLVIDO POR Edu#0069 // BACK-END POR ALLSTAR BASE ]   										 --
+-- [ SE VOCÊ ADQUIRIU ESSE PRODUTO, VOCÊ TEM DIREITO A SUPORTE GRATUITO ]   							 --
+-- [ OBRIGADO PELA CONFIANÇA // CONTATO: Edu#0069 // GITHUB: https://github.com/badlandproject  ]   	 --
+-------------------------------------------------------------------------------------------------------- -->
+
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+   <link href="badland.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+   <div id="actionmenu">
+
+	<div class="mainContainer">
+      <div class="allTags">
+          <div id="playerTag" class="staff" style="display: none;">
+            <p> Equipe </p>
+         </div>
+
+         <div id="playerTag" class="doador" style="display: none;">
+            <p> Doador </p>
+         </div>
+
+         <div id="playerTag" class="usuario" style="display: none;">
+            <p> Usuário </p>
+         </div>
+      </div>
+      
+      <div id="inventory">
+         <div id="d-peso">
+            <div class="peso"></div>
+         </div>
+         <div id="invleft">
+            
+         </div>
+
+         <div id="invright">
+            <div class="use">
+               <div class="margin-to-class">U</div>
+            </div>
+
+            <div class="send">
+               <div class="margin-to-class" >E</div>
+            </div>
+
+            <div class="drop">
+               <div class="margin-to-class">D</div>
+            </div>
+         </div>
+      </div>
+      <div id="identidadeId">
+         <div id="first">
+            <div class="emprego">
+               <h6 title="Coins acumulados" style="margin-top: 9px"><p>ORGANIZAÇÃO</p><br><span> 0</span></h6>
+            </div>
+
+            <div class="position">
+               <h6 title="Coins acumulados" style="margin-top: 9px"></i><p>CARGO</p><br><span> 0</span></h6>
+            </div>
+
+            <div class="carteira">
+               <h6 title="Coins acumulados" style="margin-top: 9px"></i><p>CARTEIRA</p><br><span> 0</span></h6>
+            </div>
+         </div>
+         <div id="second">
+            <div class="nome">
+               <h6 title="" style="margin-top: 9px"><p>NOME</p><br><span> 0</span></h6>
+            </div>
+
+            <div class="identidade">
+               <h6 title="" style="margin-top: 9px"></i><p>PASSAPORTE</p><br><span> 0</span></h6>
+            </div>
+
+            <div class="idade">
+               <h6 title="" style="margin-top: 9px"></i><p>IDADE</p><br><span> 0</span></h6>
+            </div>
+         </div>
+         <div id="third">
+            <div class="documento">
+               <h6 title="" style="margin-top: 9px"><p>DOCUMENTO</p><br><span> 0</span></h6>
+            </div>
+
+            <div class="banco">
+               <h6 title="" style="margin-top: 9px"></i><p>BANCO</p><br><span> 0</span></h6>
+            </div>
+
+            <div class="multas">
+               <h6 title="" style="margin-top: 9px"></i><p>MULTAS</p><br><span> 0</span></h6>
+            </div>
+         </div>
+      </div>
+
+      <div class="otherInfo" id="showInfo">
+         <i class="fas fa-sync-alt"></i>
+      </div>
+	  
+      <div class="amountBackground">
+         <div class="amountContainer">
+            <div class="amountTitleContainer">
+               <p> Sample Text </p>
+               <div class="borderDiv"></div>
+            </div>
+            <div class="putAmount">
+               <p> Coloque abaixo a quantidade! </p>
+            </div>
+            <div class="amountSelectorM" id="more" onclick="incrementValue()"><p>+</p></div>
+            <div class="inputStyle"><input id="amount" class="qtd" maxlength="20" spellcheck="false" value="" placeholder="Quantidade"></div>
+            <div class="amountSelectorL" id="less" onclick="subtractValue()"><p>-</p></div>
+            
+            <div class="buttonSection">
+               <div class="confirmButton" id="confirmar">
+                  <p> Confirmar </p>
+               </div>
+               <div class="cancelButton" id="cancelar">
+                  <p> Cancelar </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+
+	</div>
+</div>
+   <script src="badland.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,327 @@
+::-webkit-scrollbar {
+    position: absolute;
+    width: 0.18vw;
+    height: 1px;
+    left: 10vw;
+    border-radius: 20px;
+    
+}
+
+::-webkit-scrollbar-track {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.0);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    position: absolute;
+    background: rgba(0, 0, 0,0.4);
+    left: 10vw;
+    
+}
+body {
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+#actionmenu {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	overflow: auto;
+	position: fixed;
+	background: rgba(139, 102, 241, 0.15);
+	font-family: arial;
+}
+
+.mainContainer {
+	position: absolute;
+	top: 50%;
+	left: 20%;
+	width: 40vw;
+	height: 50vw;
+	overflow: auto;
+	transform: translate(-50%,-50%);
+    background: rgba(255,0,0,0.0);
+	border-radius: 5px;
+	
+}
+
+.garageTitle {
+	position: absolute;
+	text-align: center;
+	top: 10%;
+	left: 50%;
+	width: 35vw;
+	height: 4vw;
+	transform: translate(-50%,-50%);
+    background: rgba(0,0,0,0.35);
+	border-radius: 5px;
+}
+
+.garageTitle p {
+	font-family: Poppins, sans-serif;
+	color: rgba(255,255,255,0.80);
+	font-size: 1.25vw;
+	margin-top: 1vw;
+}
+
+#garagem {
+	position: absolute;
+	top: 48.1%;
+	left: 50%;
+	width: 35vw;
+	height: 33.1vw;
+	overflow-y: auto;
+	overflow-x: hidden;
+	transform: translate(-50%,-50%);
+    background: rgba(255,0,0,0.0);
+	border-radius: 5px;
+	
+}
+
+.garagemContent {
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	width: 35vw;
+	height: 40vw;
+	overflow: auto;
+	transform: translate(-50%,-50%);
+    background: rgba(0,0,0,0.2);
+	border-radius: 5px;
+	
+}
+
+#buttons {
+	
+	top: 83.8%;
+	left: 20%;
+	width: 35vw;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	height: 7vw;
+	background-color: rgba(0,0,0,0.30);
+	position: absolute;
+	transform: translate(-50%,-50%);
+	
+}
+
+.carIcon {
+	color: #fff;
+	margin-top: -6.4vw;
+	margin-left: 12.8vw;
+	font-size: 1.4vw;
+	width: 20vw;
+	float: left;
+}
+
+.item {
+	background: rgba(0,0,0,0.0);
+	width: 34vw;
+	margin-left: 0.5vw;
+	margin-top: 0.6vw;
+	float: left;
+	border-radius: 2px;
+	height: 7.5vw;
+	transition: 0.25s;
+}
+
+.item-textName {
+	margin-left: 0.5vw;
+	margin-top: -0.75vw;
+	float: left;
+	
+	
+}
+
+.item-textStatus{
+	
+	width: 30vw;
+	margin-left: 0.7vw;
+	margin-top: -6vw;
+	background: rgba(0,0,0,0.0);
+	
+}
+
+.ilustrationIcon {
+	margin-left: 12vw;
+}
+
+.item-textStatus p {
+	color: #fff;
+	font-family: Poppins, sans-serif;
+	font-size:0.70vw ;
+}
+
+.item-name p {
+	font-family: Poppins, sans-serif;
+	font-size: 1vw;
+	color: #fff;
+	padding:0 0vw;
+	background: rgba(0,0,0,0.0);
+}
+
+.item-imageName {
+	float: left;
+}
+
+.item-imageName img {
+	padding: 0.4vw;
+	float: left;
+	width: 11.5vw;
+	height: 6.75vw;
+	
+}
+
+.item-taxa {
+	color: #ccc;
+	margin-top: -3.5vw;
+	margin-left: 20vw;
+	font-family: Poppins, sans-serif;
+	font-size: 0.8vw;
+	width: 20vw;
+	padding: 10px;
+	float: left;
+}
+
+
+.item-left {
+	color: #ccc;
+	margin-top: -4vw;
+	margin-left: 11.5vw;
+	font-family: Poppins, sans-serif;
+	font-size: 0.8vw;
+	width: 20vw;
+	padding: 10px;
+	float: left;
+}
+
+.item-status {
+	color: #ccc;
+	margin-top: -3.5vw;
+	margin-left: 12.2vw;
+	font-family: Poppins, sans-serif;
+	font-size: 0.8vw;
+	width: 20vw;
+	padding: 10px;
+	float: left;
+}
+
+.item-right {
+	color: #999;
+	
+	width: px;
+	padding: 10px;
+	float: left;
+}
+
+.item:hover {
+	background: rgba(0,0,0,0.2);
+	
+	transition: 0.25s;
+}
+
+.item.active {
+	background: rgba(0,0,0,0.3);
+	border-right: 2px solid;
+	border-color: #28e55d;
+	transition: 0.25s;
+}
+
+.retirar {
+	color: #fff;
+	background: rgb(0, 137, 250);
+	width: 8vw;
+	padding: 0.25vw;
+	text-align: center;
+	border-radius: 4px;
+	float: left;
+	margin-top: 2.5vw;
+	margin-left: 8vw;
+	font-family: Poppins, sans-serif;
+	font-size: 1vw;
+	transition: 0.15s;
+}
+
+.guardar {
+	color: #fff;
+	background: rgba(255, 57, 57, 1);
+	width: 8vw;
+	padding: 0.25vw;
+	text-align: center;
+	font-family: Poppins, sans-serif;
+	font-size: 1vw;
+	border-radius: 4px;
+	float: left;
+	margin-top: 2.5vw;
+	margin-left: 2vw;
+	transition: 0.15s;
+}
+
+.tradu {
+	position: absolute;
+	left: 38%;
+	top:11vw;
+	width: 10vw;
+}
+
+.tradu b {
+	margin-left: 0.6vw;
+	font-weight: 500;
+	font-family: Poppins, sans-serif;
+	font-size: 0.8vw;
+	color: rgba(0,0,0,0);
+	transition: 0.25s;
+}
+
+#color:hover b {
+	color: #fff;
+	transition: 0.25s;
+}
+
+#color {
+    font-size: 0.75vw;
+    color: #fbfbfb;
+    float: left;
+	margin-top: 0vw;
+	transition: 0.25s;
+}
+
+.retirar:active, .guardar:active {
+	transform: translateY(2px);
+}
+
+.retirar:hover {
+	color: #a9a9a9;
+	background: steelblue;
+	transition: 0.15s;
+}
+
+.guardar:hover {
+	color: #a9a9a9;
+	background: rgba(247, 80, 80, 1);
+	transition: 0.15s;
+}
+
+.red {
+	color: #e52828;
+}
+
+.orange {
+	color: #e59b28;
+}
+
+.green {
+	color: #28e55d;
+}
+
+.vehOut {
+	color: #409eff;
+}

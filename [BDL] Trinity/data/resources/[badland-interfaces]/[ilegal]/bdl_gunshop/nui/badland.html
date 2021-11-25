@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>BDL GunShop</title>
+        <link rel="stylesheet" type="text/css" href="badland.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,700,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="actionmenu" style="display: none;">
+            <div class="mainContainer">
+                <div class="aboveContainer">
+                    <div class="nationWatermark">
+                        <img src="https://cdn.discordapp.com/attachments/740912067095035955/762849239004872714/Ammunation_logo.png">
+                    </div>
+                    <div class="storeCategories">
+                        <div class="whiteCategory">
+                            <span class="knives"><p> Armas Brancas </p></span>
+                        </div>
+                        <div class="gunsCategory">
+                            <span class="guns"><p> Armas de Fogo </p></span>
+                        </div>
+                        <div class="ammoCategory">
+                            <span class="ammo"><p> Munições </p></span>
+                        </div>
+                    </div>
+                    <div class="closeButton">
+                        <img id="closeMenu" class="menuoption" data-action="fechar" src="https://cdn.discordapp.com/attachments/740912067095035955/762559541283782696/back_1.png">
+                    </div>
+                </div>
+
+                <div class="itensContainer">
+                    <section class="general">
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/762918301831397386/pistol.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>FN FiveSeven</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$35000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm">
+                                <div class="confirm57">
+                                    <img class="confirmFive" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/785183904851820554/glock.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>GES Glock-18</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$30000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm Glock">
+                                <div class="confirmGlock">
+                                    <img class="confirmGlock" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/763653684160495626/m1911.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>FN M1911</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$29000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm M1911">
+                                <div class="confirmM1911">
+                                    <img class="confirmM1911" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/763653680091103242/fnm22.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>FN M22</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$28000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm M22">
+                                <div class="confirmM22">
+                                    <img class="confirmM22" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/763653678799781888/hk110.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>FSY HK 110</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$22000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm HK110">
+                                <div class="confirmHK110">
+                                    <img class="confirmHK110" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- MUNIÇÕES DAS ARMAS -->
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/763689217519255552/m-fiveseven.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>Munição de FiveSeven</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$9500</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm MuniFive">
+                                <div class="confirmMuniFive">
+                                    <img class="confirmMuniFive" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/763689219516006410/m-glock.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>Munição de Glock-18</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$8600</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm MuniGlock">
+                                <div class="confirmMuniGlock">
+                                    <img class="confirmMuniGlock" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/763689225370861608/m-m1911.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>Munição de M1911</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$8400</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm MuniM1911">
+                                <div class="confirmMuniM1911">
+                                    <img class="confirmMuniM1911" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/763689220954652692/m-fnm22.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>Munição de M22</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$8200</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm MuniM22">
+                                <div class="confirmMuniM22">
+                                    <img class="confirmMuniM22" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/763689223034241034/m-hk110.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>Munição de HK110</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$5100</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm MuniHK110">
+                                <div class="confirmMuniHK110">
+                                    <img class="confirmMuniHK110" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ARMAS BRANCAS -->
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/757143959394058300/badland2.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>Faca M9</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$1000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm Knife">
+                                <div class="confirmKnife">
+                                    <img class="confirmKnife" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/757143959394058300/badland2.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>Machado</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$1600</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm Machado">
+                                <div class="confirmMachado">
+                                    <img class="confirmMachado" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/757143959394058300/badland2.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>Canivete Switch</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$750</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm Canivete">
+                                <div class="confirmCanivete">
+                                    <img class="confirmCanivete" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/757143959394058300/badland2.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>Taco de Baseball</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$2300</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm Baseball">
+                                <div class="confirmBaseball">
+                                    <img class="confirmBaseball" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/757143959394058300/badland2.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>Martelo</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$900</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm Martelo">
+                                <div class="confirmMartelo">
+                                    <img class="confirmMartelo" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/757143959394058300/badland2.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>Taco de Golfe</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$1350</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm Golf">
+                                <div class="confirmGolf">
+                                    <img class="confirmGolf" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/757143959394058300/badland2.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>Pé de Cabra</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$1200</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm Cabra">
+                                <div class="confirmCabra">
+                                    <img class="confirmCabra" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/757143959394058300/badland2.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>Soco Inglês</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$1000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm Soco">
+                                <div class="confirmSoco">
+                                    <img class="confirmSoco" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/757143959394058300/badland2.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>Chave Inglesa</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$800</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm Wrench">
+                                <div class="confirmWrench">
+                                    <img class="confirmWrench" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/757143959394058300/badland2.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>Taco de Sinuca</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$2200</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm Sinuca">
+                                <div class="confirmSinuca">
+                                    <img class="confirmSinuca" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </section>
+
+                    <section class="brancas">
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/757143959394058300/badland2.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>Faca M9</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$1000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm Knife">
+                                <div class="confirmKnife">
+                                    <img class="confirmKnife" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/757143959394058300/badland2.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>Machado</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$1600</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm Machado">
+                                <div class="confirmMachado">
+                                    <img class="confirmMachado" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/757143959394058300/badland2.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>Canivete Switch</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$750</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm Canivete">
+                                <div class="confirmCanivete">
+                                    <img class="confirmCanivete" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/757143959394058300/badland2.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>Taco de Baseball</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$2300</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm Baseball">
+                                <div class="confirmBaseball">
+                                    <img class="confirmBaseball" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/757143959394058300/badland2.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>Martelo</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$900</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm Martelo">
+                                <div class="confirmMartelo">
+                                    <img class="confirmMartelo" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/757143959394058300/badland2.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>Taco de Golfe</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$1350</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm Golf">
+                                <div class="confirmGolf">
+                                    <img class="confirmGolf" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/757143959394058300/badland2.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>Pé de Cabra</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$1200</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm Cabra">
+                                <div class="confirmCabra">
+                                    <img class="confirmCabra" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/757143959394058300/badland2.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>Soco Inglês</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$1000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm Soco">
+                                <div class="confirmSoco">
+                                    <img class="confirmSoco" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/757143959394058300/badland2.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>Chave Inglesa</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$800</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm Wrench">
+                                <div class="confirmWrench">
+                                    <img class="confirmWrench" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/757143959394058300/badland2.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>Taco de Sinuca</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$2200</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm Sinuca">
+                                <div class="confirmSinuca">
+                                    <img class="confirmSinuca" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </section>
+
+                    <section class="weapons">
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/762918301831397386/pistol.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>FN FiveSeven</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$35000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm">
+                                <div class="confirm57">
+                                    <img class="confirmFive" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/785183904851820554/glock.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>GES Glock-18</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$30000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm Glock">
+                                <div class="confirmGlock">
+                                    <img class="confirmGlock" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/763653684160495626/m1911.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>FN M1911</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$29000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm M1911">
+                                <div class="confirmM1911">
+                                    <img class="confirmM1911" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/763653680091103242/fnm22.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>FN M22</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$28000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm M22">
+                                <div class="confirmM22">
+                                    <img class="confirmM22" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/763653678799781888/hk110.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>FSY HK 110</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$22000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm HK110">
+                                <div class="confirmHK110">
+                                    <img class="confirmHK110" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </section>
+
+                    <section class="ammunition">
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/763689217519255552/m-fiveseven.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>Munição de FiveSeven</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$9500</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm MuniFive">
+                                <div class="confirmMuniFive">
+                                    <img class="confirmMuniFive" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/763689219516006410/m-glock.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>Munição de Glock-18</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$8600</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm MuniGlock">
+                                <div class="confirmMuniGlock">
+                                    <img class="confirmMuniGlock" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/763689225370861608/m-m1911.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>Munição de M1911</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$8400</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm MuniM1911">
+                                <div class="confirmMuniM1911">
+                                    <img class="confirmMuniM1911" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/763689220954652692/m-fnm22.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>Munição de M22</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$8200</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm MuniM22">
+                                <div class="confirmMuniM22">
+                                    <img class="confirmMuniM22" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemIlustration">
+                            <img src="https://cdn.discordapp.com/attachments/740912067095035955/763689223034241034/m-hk110.png" id="image">
+                            <div class="itemHoverContainer">
+                                <div class="itemTitle">
+                                    <div class="tituloItem">
+                                        <p>Nome</p>
+                                        <div class="itemName">
+                                            <p>Munição de HK110</p>
+                                        </div>
+                                        <div class="price">
+                                            <p>$5100</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confirm MuniHK110">
+                                <div class="confirmMuniHK110">
+                                    <img class="confirmMuniHK110" src="https://cdn.discordapp.com/attachments/740912067095035955/762480176679878676/cart.png" id="image">
+                                </div>
+                            </div>
+                        </div>
+                        
+
+
+                    </section>
+
+                </div>
+
+                <div class="containerFIVE">
+                    <div class="amountContainer">
+                        <div class="amountCenter">
+                            <div class="amountWatermark">
+                                <img src="https://cdn.discordapp.com/attachments/740912067095035955/762849239004872714/Ammunation_logo.png">
+                            </div>
+                            <div class="putAmount">
+                                <p>Você tem certeza?</p>
+                            </div>
+                            <div class="buyButton">
+                                <img class="menuoption" data-action="confirm-five" src="https://cdn.discordapp.com/attachments/763574397797269534/763629523111378964/clipart2707415.png" id="image">
+                            </div>
+                            <div class="closeAmount">
+                                <img class="closeAmount" src="https://cdn.discordapp.com/attachments/740912067095035955/762559541283782696/back_1.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="containerGLOCK">
+                    <div class="amountContainer">
+                        <div class="amountCenter">
+                            <div class="amountWatermark">
+                                <img src="https://cdn.discordapp.com/attachments/740912067095035955/762849239004872714/Ammunation_logo.png">
+                            </div>
+                            <div class="putAmount">
+                                <p>Você tem certeza?</p>
+                            </div>
+                            <div class="buyButton">
+                                <img class="menuoption" data-action="confirm-glock" src="https://cdn.discordapp.com/attachments/763574397797269534/763629523111378964/clipart2707415.png" id="image">
+                            </div>
+                            <div class="closeAmount">
+                                <img class="closeAmount" src="https://cdn.discordapp.com/attachments/740912067095035955/762559541283782696/back_1.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="containerM19">
+                    <div class="amountContainer">
+                        <div class="amountCenter">
+                            <div class="amountWatermark">
+                                <img src="https://cdn.discordapp.com/attachments/740912067095035955/762849239004872714/Ammunation_logo.png">
+                            </div>
+                            <div class="putAmount">
+                                <p>Você tem certeza?</p>
+                            </div>
+                            <div class="buyButton">
+                                <img class="menuoption" data-action="confirm-m1911" src="https://cdn.discordapp.com/attachments/763574397797269534/763629523111378964/clipart2707415.png" id="image">
+                            </div>
+                            <div class="closeAmount">
+                                <img class="closeAmount" src="https://cdn.discordapp.com/attachments/740912067095035955/762559541283782696/back_1.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="containerM22">
+                    <div class="amountContainer">
+                        <div class="amountCenter">
+                            <div class="amountWatermark">
+                                <img src="https://cdn.discordapp.com/attachments/740912067095035955/762849239004872714/Ammunation_logo.png">
+                            </div>
+                            <div class="putAmount">
+                                <p>Você tem certeza?</p>
+                            </div>
+                            <div class="buyButton">
+                                <img class="menuoption" data-action="confirm-m22" src="https://cdn.discordapp.com/attachments/763574397797269534/763629523111378964/clipart2707415.png" id="image">
+                            </div>
+                            <div class="closeAmount">
+                                <img class="closeAmount" src="https://cdn.discordapp.com/attachments/740912067095035955/762559541283782696/back_1.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="containerHK110">
+                    <div class="amountContainer">
+                        <div class="amountCenter">
+                            <div class="amountWatermark">
+                                <img src="https://cdn.discordapp.com/attachments/740912067095035955/762849239004872714/Ammunation_logo.png">
+                            </div>
+                            <div class="putAmount">
+                                <p>Você tem certeza?</p>
+                            </div>
+                            <div class="buyButton">
+                                <img class="menuoption" data-action="confirm-hk110" src="https://cdn.discordapp.com/attachments/763574397797269534/763629523111378964/clipart2707415.png" id="image">
+                            </div>
+                            <div class="closeAmount">
+                                <img class="closeAmount" src="https://cdn.discordapp.com/attachments/740912067095035955/762559541283782696/back_1.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MUNIÇÕES DAS ARMAS -->
+
+                <div class="containerMuniFive">
+                    <div class="amountContainer">
+                        <div class="amountCenter">
+                            <div class="amountWatermark">
+                                <img src="https://cdn.discordapp.com/attachments/740912067095035955/762849239004872714/Ammunation_logo.png">
+                            </div>
+                            <div class="putAmount">
+                                <p>Você tem certeza?</p>
+                            </div>
+                            <div class="confirmDesc">
+                                <p>CAIXA DE MUNIÇÃO DE <b> FN FIVE-SEVEN </b> (50x BALAS) </p>
+                            </div>
+                            <div class="buyButton">
+                                <img class="menuoption" data-action="confirm-muni-five" src="https://cdn.discordapp.com/attachments/763574397797269534/763629523111378964/clipart2707415.png" id="image">
+                            </div>
+                            <div class="closeAmount">
+                                <img class="closeAmount" src="https://cdn.discordapp.com/attachments/740912067095035955/762559541283782696/back_1.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="containerMuniGlock">
+                    <div class="amountContainer">
+                        <div class="amountCenter">
+                            <div class="amountWatermark">
+                                <img src="https://cdn.discordapp.com/attachments/740912067095035955/762849239004872714/Ammunation_logo.png">
+                            </div>
+                            <div class="putAmount">
+                                <p>Você tem certeza?</p>
+                            </div>
+                            <div class="confirmDesc">
+                                <p>CAIXA DE MUNIÇÃO DE <b> GES Glock-18 </b> (50x BALAS) </p>
+                            </div>
+                            <div class="buyButton">
+                                <img class="menuoption" data-action="confirm-muni-glock" src="https://cdn.discordapp.com/attachments/763574397797269534/763629523111378964/clipart2707415.png" id="image">
+                            </div>
+                            <div class="closeAmount">
+                                <img class="closeAmount" src="https://cdn.discordapp.com/attachments/740912067095035955/762559541283782696/back_1.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="containerMuniM1911">
+                    <div class="amountContainer">
+                        <div class="amountCenter">
+                            <div class="amountWatermark">
+                                <img src="https://cdn.discordapp.com/attachments/740912067095035955/762849239004872714/Ammunation_logo.png">
+                            </div>
+                            <div class="putAmount">
+                                <p>Você tem certeza?</p>
+                            </div>
+                            <div class="confirmDesc">
+                                <p>CAIXA DE MUNIÇÃO DE <b> FN M1911 </b> (50x BALAS) </p>
+                            </div>
+                            <div class="buyButton">
+                                <img class="menuoption" data-action="confirm-muni-m1911" src="https://cdn.discordapp.com/attachments/763574397797269534/763629523111378964/clipart2707415.png" id="image">
+                            </div>
+                            <div class="closeAmount">
+                                <img class="closeAmount" src="https://cdn.discordapp.com/attachments/740912067095035955/762559541283782696/back_1.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="containerMuniM22">
+                    <div class="amountContainer">
+                        <div class="amountCenter">
+                            <div class="amountWatermark">
+                                <img src="https://cdn.discordapp.com/attachments/740912067095035955/762849239004872714/Ammunation_logo.png">
+                            </div>
+                            <div class="putAmount">
+                                <p>Você tem certeza?</p>
+                            </div>
+                            <div class="confirmDesc">
+                                <p>CAIXA DE MUNIÇÃO DE <b> FN M22 </b> (50x BALAS) </p>
+                            </div>
+                            <div class="buyButton">
+                                <img class="menuoption" data-action="confirm-muni-m22" src="https://cdn.discordapp.com/attachments/763574397797269534/763629523111378964/clipart2707415.png" id="image">
+                            </div>
+                            <div class="closeAmount">
+                                <img class="closeAmount" src="https://cdn.discordapp.com/attachments/740912067095035955/762559541283782696/back_1.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="containerMuniHK110">
+                    <div class="amountContainer">
+                        <div class="amountCenter">
+                            <div class="amountWatermark">
+                                <img src="https://cdn.discordapp.com/attachments/740912067095035955/762849239004872714/Ammunation_logo.png">
+                            </div>
+                            <div class="putAmount">
+                                <p>Você tem certeza?</p>
+                            </div>
+                            <div class="confirmDesc">
+                                <p>CAIXA DE MUNIÇÃO DE <b> FSY HK-110 </b> (25x BALAS) </p>
+                            </div>
+                            <div class="buyButton">
+                                <img class="menuoption" data-action="confirm-muni-hk110" src="https://cdn.discordapp.com/attachments/763574397797269534/763629523111378964/clipart2707415.png" id="image">
+                            </div>
+                            <div class="closeAmount">
+                                <img class="closeAmount" src="https://cdn.discordapp.com/attachments/740912067095035955/762559541283782696/back_1.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ARMAS BRANCAS -->
+
+                <div class="containerKnife">
+                    <div class="amountContainer">
+                        <div class="amountCenter">
+                            <div class="amountWatermark">
+                                <img src="https://cdn.discordapp.com/attachments/740912067095035955/762849239004872714/Ammunation_logo.png">
+                            </div>
+                            <div class="putAmount">
+                                <p>Você tem certeza?</p>
+                            </div>
+                        
+                            <div class="buyButton">
+                                <img class="menuoption" data-action="confirm-faca" src="https://cdn.discordapp.com/attachments/763574397797269534/763629523111378964/clipart2707415.png" id="image">
+                            </div>
+                            <div class="closeAmount">
+                                <img class="closeAmount" src="https://cdn.discordapp.com/attachments/740912067095035955/762559541283782696/back_1.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="containerMachado">
+                    <div class="amountContainer">
+                        <div class="amountCenter">
+                            <div class="amountWatermark">
+                                <img src="https://cdn.discordapp.com/attachments/740912067095035955/762849239004872714/Ammunation_logo.png">
+                            </div>
+                            <div class="putAmount">
+                                <p>Você tem certeza?</p>
+                            </div>
+                        
+                            <div class="buyButton">
+                                <img class="menuoption" data-action="confirm-machado" src="https://cdn.discordapp.com/attachments/763574397797269534/763629523111378964/clipart2707415.png" id="image">
+                            </div>
+                            <div class="closeAmount">
+                                <img class="closeAmount" src="https://cdn.discordapp.com/attachments/740912067095035955/762559541283782696/back_1.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="containerCanivete">
+                    <div class="amountContainer">
+                        <div class="amountCenter">
+                            <div class="amountWatermark">
+                                <img src="https://cdn.discordapp.com/attachments/740912067095035955/762849239004872714/Ammunation_logo.png">
+                            </div>
+                            <div class="putAmount">
+                                <p>Você tem certeza?</p>
+                            </div>
+                        
+                            <div class="buyButton">
+                                <img class="menuoption" data-action="confirm-canivete" src="https://cdn.discordapp.com/attachments/763574397797269534/763629523111378964/clipart2707415.png" id="image">
+                            </div>
+                            <div class="closeAmount">
+                                <img class="closeAmount" src="https://cdn.discordapp.com/attachments/740912067095035955/762559541283782696/back_1.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="containerBaseball">
+                    <div class="amountContainer">
+                        <div class="amountCenter">
+                            <div class="amountWatermark">
+                                <img src="https://cdn.discordapp.com/attachments/740912067095035955/762849239004872714/Ammunation_logo.png">
+                            </div>
+                            <div class="putAmount">
+                                <p>Você tem certeza?</p>
+                            </div>
+                        
+                            <div class="buyButton">
+                                <img class="menuoption" data-action="confirm-beisebol" src="https://cdn.discordapp.com/attachments/763574397797269534/763629523111378964/clipart2707415.png" id="image">
+                            </div>
+                            <div class="closeAmount">
+                                <img class="closeAmount" src="https://cdn.discordapp.com/attachments/740912067095035955/762559541283782696/back_1.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="containerMartelo">
+                    <div class="amountContainer">
+                        <div class="amountCenter">
+                            <div class="amountWatermark">
+                                <img src="https://cdn.discordapp.com/attachments/740912067095035955/762849239004872714/Ammunation_logo.png">
+                            </div>
+                            <div class="putAmount">
+                                <p>Você tem certeza?</p>
+                            </div>
+                        
+                            <div class="buyButton">
+                                <img class="menuoption" data-action="confirm-martelo" src="https://cdn.discordapp.com/attachments/763574397797269534/763629523111378964/clipart2707415.png" id="image">
+                            </div>
+                            <div class="closeAmount">
+                                <img class="closeAmount" src="https://cdn.discordapp.com/attachments/740912067095035955/762559541283782696/back_1.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="containerGolf">
+                    <div class="amountContainer">
+                        <div class="amountCenter">
+                            <div class="amountWatermark">
+                                <img src="https://cdn.discordapp.com/attachments/740912067095035955/762849239004872714/Ammunation_logo.png">
+                            </div>
+                            <div class="putAmount">
+                                <p>Você tem certeza?</p>
+                            </div>
+                        
+                            <div class="buyButton">
+                                <img class="menuoption" data-action="confirm-golf" src="https://cdn.discordapp.com/attachments/763574397797269534/763629523111378964/clipart2707415.png" id="image">
+                            </div>
+                            <div class="closeAmount">
+                                <img class="closeAmount" src="https://cdn.discordapp.com/attachments/740912067095035955/762559541283782696/back_1.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="containerCabra">
+                    <div class="amountContainer">
+                        <div class="amountCenter">
+                            <div class="amountWatermark">
+                                <img src="https://cdn.discordapp.com/attachments/740912067095035955/762849239004872714/Ammunation_logo.png">
+                            </div>
+                            <div class="putAmount">
+                                <p>Você tem certeza?</p>
+                            </div>
+                        
+                            <div class="buyButton">
+                                <img class="menuoption" data-action="confirm-pecabra" src="https://cdn.discordapp.com/attachments/763574397797269534/763629523111378964/clipart2707415.png" id="image">
+                            </div>
+                            <div class="closeAmount">
+                                <img class="closeAmount" src="https://cdn.discordapp.com/attachments/740912067095035955/762559541283782696/back_1.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="containerSoco">
+                    <div class="amountContainer">
+                        <div class="amountCenter">
+                            <div class="amountWatermark">
+                                <img src="https://cdn.discordapp.com/attachments/740912067095035955/762849239004872714/Ammunation_logo.png">
+                            </div>
+                            <div class="putAmount">
+                                <p>Você tem certeza?</p>
+                            </div>
+                        
+                            <div class="buyButton">
+                                <img class="menuoption" data-action="confirm-socoingles" src="https://cdn.discordapp.com/attachments/763574397797269534/763629523111378964/clipart2707415.png" id="image">
+                            </div>
+                            <div class="closeAmount">
+                                <img class="closeAmount" src="https://cdn.discordapp.com/attachments/740912067095035955/762559541283782696/back_1.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="containerChaveIng">
+                    <div class="amountContainer">
+                        <div class="amountCenter">
+                            <div class="amountWatermark">
+                                <img src="https://cdn.discordapp.com/attachments/740912067095035955/762849239004872714/Ammunation_logo.png">
+                            </div>
+                            <div class="putAmount">
+                                <p>Você tem certeza?</p>
+                            </div>
+                        
+                            <div class="buyButton">
+                                <img class="menuoption" data-action="confirm-chaveing" src="https://cdn.discordapp.com/attachments/763574397797269534/763629523111378964/clipart2707415.png" id="image">
+                            </div>
+                            <div class="closeAmount">
+                                <img class="closeAmount" src="https://cdn.discordapp.com/attachments/740912067095035955/762559541283782696/back_1.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="containerSinuca">
+                    <div class="amountContainer">
+                        <div class="amountCenter">
+                            <div class="amountWatermark">
+                                <img src="https://cdn.discordapp.com/attachments/740912067095035955/762849239004872714/Ammunation_logo.png">
+                            </div>
+                            <div class="putAmount">
+                                <p>Você tem certeza?</p>
+                            </div>
+                        
+                            <div class="buyButton">
+                                <img class="menuoption" data-action="confirm-sinuca" src="https://cdn.discordapp.com/attachments/763574397797269534/763629523111378964/clipart2707415.png" id="image">
+                            </div>
+                            <div class="closeAmount">
+                                <img class="closeAmount" src="https://cdn.discordapp.com/attachments/740912067095035955/762559541283782696/back_1.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <script src="badland.js" type="text/javascript"></script>
+    </body>
+</html>

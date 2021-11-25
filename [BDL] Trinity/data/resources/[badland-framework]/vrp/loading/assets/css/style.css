@@ -1,0 +1,210 @@
+/**
+* SlentKat - Discord: SlentKat#5406
+**/
+
+@font-face {
+    font-family: BebasNeue;
+    src: url(../fonts/BebasNeue.ttf);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: -moz-linear-gradient(to right bottom, rgba(0, 0, 0, 1), rgba(68, 36, 137, 0.80)), url(../img/background.png);
+    background: -webkit-linear-gradient(to right bottom, rgba(0, 0, 0, 1), rgba(68, 36, 137, 0.80)), url(../img/background.png);
+    background: linear-gradient(to right bottom, rgba(0, 0, 0, 1), rgba(68, 36, 137, 0.80)), url(../img/background.png);
+    background-size: 100%;
+    font-family: BebasNeue;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
+
+}
+
+.block-copy {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0px;
+  background: transparent;
+  z-index: 1000;
+}
+
+#preloader {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo {
+    width: 200px;
+    height: 164.83px;
+    /*background-image: url(../img/allstar-loadingscreen.png);*/
+    background-size: cover;
+    position: absolute;
+    top: 25%;
+    left: 43%;
+    transform: translate(-40%, -40%) scale(1.3);
+    -webkit-animation: pulseBounce 2.5s infinite;
+    animation: pulseBounce 2.5s infinite;
+    text-align: center;
+}
+
+.loading-text {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    text-align: center;
+    color: #FFF;
+    font-size: 50px;
+   
+}
+
+.tip-text {
+    width: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    height: auto;
+    position: absolute;
+    bottom: 165px;
+    left: 0px;
+    text-align: center;
+    color: #FFF;
+    font-size: 13px;
+}
+
+@keyframes pulseBounce {
+    0% {
+        margin-top: 0;
+        transform: translate(-55%, -50%) scale(1);
+    }
+    25% {
+        transform: translate(-55%, -50%) scale(1.05);
+    }
+    50% {
+        transform: translate(-55%, -50%) scale(1);
+    }
+    75% {
+        transform: translate(-55%, -50%) scale(1.05);
+    }
+    100% {
+        transform: translate(-55%, -50%) scale(1);
+    }
+}
+
+
+/* https://loading.io/css/ */
+
+.lds-facebook {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 6px;
+    width: 13px;
+    background: #fff;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.lds-facebook div:nth-child(1) {
+    left: 6px;
+    animation-delay: -0.24s;
+}
+
+.lds-facebook div:nth-child(2) {
+    left: 26px;
+    animation-delay: -0.12s;
+}
+
+.lds-facebook div:nth-child(3) {
+    left: 45px;
+    animation-delay: 0;
+}
+
+@keyframes lds-facebook {
+    0% {
+        top: 6px;
+        height: 51px;
+    }
+    50%,
+    100% {
+        top: 19px;
+        height: 26px;
+    }
+}
+
+#loader {
+    display: block;
+    position: absolute;
+    left: 47%;
+    top: 41%;
+    width: 380px;
+    height: 380px;
+    margin: -125px 0 0 -146px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #FFF;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #FFF;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #FFF;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

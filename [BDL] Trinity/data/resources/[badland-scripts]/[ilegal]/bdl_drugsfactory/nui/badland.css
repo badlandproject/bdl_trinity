@@ -1,0 +1,132 @@
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.mainContainer {
+    position: absolute;
+    width: 40vw;
+    height: 20.5vw;
+    background-color: rgba(255,0,0,0.0);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius:5px;
+}
+
+.titleContainer {
+    position: absolute;
+    width: 40vw;
+    height: 4vw;
+    background-color: rgba(0,0,0,0.6);
+    border-radius:5px;
+    text-align: center;
+}
+
+.medicine span {
+	color: rgba(255,255,255,0.75);
+	font-family: Poppins, sans-serif;
+}
+
+#itemPrice p {
+	margin-top: 1vw;
+}
+
+#item:hover span {
+	color: #fff;
+    transition: 0.25s;
+}
+
+#titleText p {
+    font-family: Poppins, sans-serif;
+    color: rgba(255,255,255,0.75);
+    font-size: 1.75vw;
+    margin-top: 0.8vw;
+}
+
+.belowContainer {
+    position: absolute;
+    top: 4.5vw;
+    width: 40vw;
+    height: 16vw;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+.contentContainer {
+    position: absolute;
+    width: 39vw;
+    height: 15vw;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 5px;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+
+#item {
+    float: left;
+    width: 11vw;
+    height: 11vw;
+    background-color: transparent;
+    border-radius: 5px;
+    margin-left: 1vw;
+    margin-top: 1vw;
+    text-align: center;
+    transition: 0.25s;
+}
+
+#itemBot {
+    float: left;
+    width: 11vw;
+    height: 10vw;
+    background-color: transparent;
+    border-radius: 5px;
+    margin-left: 0.65vw;
+    margin-top: 0vw;
+    text-align: center;
+    transition: 0.25s;
+}
+
+#itemBot:hover img {
+    opacity: 0.4;
+    transition: 0.25s;
+}
+
+#itemBot:hover p {
+    color: #fff;
+    transition: 0.25s;
+}
+
+#item p {
+    margin-top: 0.5vw;
+    color: rgba(255,255,255,0.75);
+    font-family: Poppins, sans-serif;
+    font-size: 0.99vw;
+    transition: 0.25s;
+}
+
+.itemImage img {
+    width: 7vw;
+    margin-top: 0.5vw;
+    transition: 0.25s;
+}
+
+#item:hover img {
+    opacity: 0.4;
+    transition: 0.25s;
+}
+
+#item:hover p {
+    color: #fff;
+    transition: 0.25s;
+}

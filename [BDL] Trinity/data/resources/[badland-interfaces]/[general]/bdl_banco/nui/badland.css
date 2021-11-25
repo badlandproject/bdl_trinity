@@ -1,0 +1,1336 @@
+::-webkit-scrollbar {
+    position: absolute;
+    width: 5px;
+    height: 1px;
+    left: 10vw;
+    border-radius: 20px;
+    
+}
+
+::-webkit-scrollbar-track {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.0);
+    border-bottom-right-radius: 10px;
+    left: 10vw;
+}
+
+::-webkit-scrollbar-thumb {
+    position: absolute;
+    background: rgba(0, 218, 73,0.7);
+    left: 10vw;
+    
+}
+
+html, body, p, button{
+	padding: 0;
+    margin: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body.active{
+	background-color: rgba(0,0,0,0.0);
+}
+
+.allScreen {
+    width: 100%;
+    height: 100%;
+    
+}
+
+#focus {
+    background-color: rgba(0,0,0,0.5);
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+input{
+    border: none;
+    width: 11vw;
+    height: 1vw;
+    color: #2C2F33;
+    font-size: 0.75vw;
+    text-decoration: none;
+    font-family: Poppins, sans-serif;
+}
+
+input:placeholder{
+    text-decoration: none;
+    color: #C5C5C5;
+}
+
+@font-face {
+    font-family: 'AvenirNextDemi';
+    src: url('media/fonts/AvenirNextRoundedStd-Demi.ttf');
+}
+
+@font-face {
+    font-family: 'AvenirNextMed';
+    src: url('media/fonts/AvenirNextRoundedStd-Med.ttf');
+}
+
+@font-face {
+    font-family: 'AvenirNextRoundedStdBold';
+    src: url('media/fonts/AvenirNextRoundedStd-Bold.ttf');
+}
+
+.mainContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 65vw;
+    height: 40vw;
+    border-radius: 10px;
+    background-color: rgb(201, 228, 213);
+    transform: translate(-50%,-50%);
+}
+
+.loginContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 65vw;
+    height: 40vw;
+    border-radius: 10px;
+    transform: translate(-50%,-50%);
+    background-image: linear-gradient(to right, rgb(0, 218, 73), rgb(0, 252, 126));
+}
+
+.loginWatermark img{
+    width: 65vw;
+}
+
+.loginUIContainer {
+    position: absolute;
+    width: 35vw;
+    height: 30vw;
+    background-color: #fff;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.buttonAlign {
+    position: absolute;
+    width: 35vw;
+    height: 30vw;
+    top: 50%;
+    background-color: rgba(0,0,0,0.0);
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.loginButton {
+    margin: auto;
+    margin-top: 55%;
+    width: 22%;
+    text-align: center;
+    height: 2vw;
+    background-image: linear-gradient(to right, rgb(0, 218, 73), rgb(0, 252, 126));
+    border-radius: 10px;
+    
+}
+
+.loginButton p {
+	margin-top: 55%;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 1.25vw;
+    
+}
+
+.loginButton:hover p {
+    color: #b5b5b5;
+    
+}
+
+.loginButton:hover {
+    background-image: linear-gradient(to right, rgba(0, 218, 73,0.75), rgba(0, 252, 126,0.75));
+    
+}
+
+.backwards {
+    position: absolute;
+    left: 87%;
+    top: 2%;
+    transition: 0.10s;
+}
+
+.backwards img{
+    width: 4vw;
+    transition: 0.10s;
+}
+
+.backwards:hover img {
+    opacity: 0.75;
+    transform: scale(1.025,1.025);
+    transition: 0.10s;
+}
+
+.forgotPassword {
+    position: absolute;
+    top: 90%;
+    left: 5%;
+    transition: 0.25s;
+}
+
+.forgotPassword p {
+    font-family: Poppins, sans-serif;
+    color:  rgba(0, 218, 73,1);
+    font-size: 0.85vw;
+    transition: 0.25s;
+}
+
+.forgotPassword:hover p {
+    color:  rgba(0, 218, 73,0.75);
+    transform: scale(1.05,1.05);
+    transition: 0.25s;
+}
+
+.fleecaTitleImage {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.fleecaTitleImage img {
+    width: 10vw;
+}
+
+.fleecaTitleImage p {
+    font-family: Poppins, sans-serif;
+    font-size: 0.75vw;
+}
+
+.loginUsername {
+    position: absolute;
+    width: 15vw;
+    height: 1.5vw;
+    border: 2px solid;
+    border-color:  rgb(0, 218, 73);
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.loginUsername p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.75vw;
+    margin-top: 0.25vw;
+    margin-left: 0.5vw;
+}
+
+.loginPassword {
+    position: absolute;
+    width: 15vw;
+    height: 1.5vw;
+    border: 2px solid;
+    border-color:  rgb(0, 218, 73);
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.loginPassword p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95vw;
+    margin-top: 0.25vw;
+    margin-left: 0.5vw;
+}
+
+.loginUserTitle {
+    position: absolute;
+    top: 35%;
+    left: 32.5%;
+    transform: translate(-50%,-50%);
+}
+
+.loginUserTitle p{
+    font-family: Poppins, sans-serif;
+    font-size: 0.75vw;
+    color: rgb(75,75,75);
+}
+
+.loginPassTitle {
+    position: absolute;
+    top: 50%;
+    left: 36%;
+    transform: translate(-50%,-50%);
+}
+
+.loginPassTitle p{
+    font-family: Poppins, sans-serif;
+    font-size: 0.75vw;
+    color: rgb(75,75,75);
+}
+
+.titleContainer {
+    position: absolute;
+    width: 65vw;
+    height: 5vw;
+    background-color: rgba(255, 255, 255,1);
+    background-image: src('https://cdn.discordapp.com/attachments/740912067095035955/766747831242981436/marca_dagua.png');
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.fleecaWaterMark {
+    width: 10vw;
+    height: 5vw;
+    background-image: linear-gradient(to right, rgb(0, 218, 73), rgb(0, 252, 126));
+    border-top-left-radius: 10px;
+}
+
+.fleecaWaterMark img {
+    margin-top: 1vw;
+    width: 10vw;
+}
+
+.fleecaTitle {
+    position: absolute;
+    bottom: 30%;
+    left: 16.5%;
+}
+
+.fleecaTitle span {
+    font-family: Poppins, sans-serif;
+    font-size: 1.3vw;
+    color: rgba(150,150,150,1);
+}
+
+.userOnTitleContainer {
+    position: absolute;
+    top: 25%;
+    left: 91%;
+	
+}
+
+.userOnTitleContainer img {
+    width: 5vw;
+	opacity: 0.6;
+	transition: 0.25s;
+}
+
+.userOnTitleContainer:hover img {
+	transform: scale(1.05,1.05);
+	opacity: 0.9;
+	transition: 0.25s;
+}
+
+.userNameFirstName {
+    position: absolute;
+    top: 20%;
+    left: 79%;
+}
+
+.userNameFirstName p {
+    font-family: Poppins, sans-serif;
+    font-size: 1vw;
+    color: rgba(100,100,100,0.7);
+    
+}
+
+.leftSideContainer {
+    position: absolute;
+    width: 10vw;
+    height: 35vw;
+    top: 5vw;
+    background-color: rgba(255, 255, 255,1);
+    border-bottom-left-radius: 10px;
+    text-align: center;
+}
+
+.depositButton {
+    position: absolute;
+    width: 10vw;
+    height: 7vw;
+    background-color: rgba(0,0,0,0.0);
+    border-bottom: 5px solid;
+    border-image-slice: 1;
+    border-width: 1px;
+    border-image-source: linear-gradient(to left, rgba(0,0,0,0) 1%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 99%);
+}
+
+.depositIcon {
+    margin-top: 1.3vw;
+	font-weight: 700;
+	font-size: 3vw;
+    color: rgba(0,0,0,0.5);
+    transition: 0.10s;
+}
+
+.depositText p {
+    color: rgba(0,0,0,0.5);
+    font-weight: 500;
+    font-family: Poppins, sans-serif;
+	font-size: 0.8vw;
+    margin-top: 0.3vw;
+    transition: 0.10s;
+}
+
+.depositButton:hover p {
+    color: rgb(0, 218, 73);
+    transition: 0.10s;
+}
+
+.depositButton:hover .depositIcon{
+    color: rgb(0, 218, 73);
+    transition: 0.10s;
+}
+
+.sacarButton {
+    position: absolute;
+    top: 7vw;
+    width: 10vw;
+    height: 7vw;
+    background-color: rgba(0,0,0,0.0);
+    border-bottom: 5px solid;
+    border-image-slice: 1;
+    border-width: 1px;
+    border-image-source: linear-gradient(to left, rgba(0,0,0,0) 1%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 99%);
+}
+
+.sacarIcon {
+    margin-top: 1.3vw;
+	font-weight: 700;
+	font-size: 3vw;
+    color: rgba(0,0,0,0.5);
+    transition: 0.10s;
+}
+
+.sacarText p {
+    color: rgba(0,0,0,0.5);
+    font-weight: 500;
+    font-family: Poppins, sans-serif;
+	font-size: 0.8vw;
+    margin-top: 0.3vw;
+    transition: 0.10s;
+}
+
+.sacarButton:hover p {
+    color: rgb(0, 218, 73);
+    transition: 0.10s;
+}
+
+.sacarButton:hover .sacarIcon{
+    color: rgb(0, 218, 73);
+    transition: 0.10s;
+}
+
+.transferButton {
+    position: absolute;
+    top: 14vw;
+    width: 10vw;
+    height: 7vw;
+    background-color: rgba(0,0,0,0.0);
+    border-bottom: 5px solid;
+    border-image-slice: 1;
+    border-width: 1px;
+    border-image-source: linear-gradient(to left, rgba(0,0,0,0) 1%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 99%);
+}
+
+.transferIcon {
+    margin-top: 1.3vw;
+	font-weight: 700;
+	font-size: 3vw;
+    color: rgba(0,0,0,0.5);
+    transition: 0.10s;
+}
+
+.transferText p {
+    color: rgba(0,0,0,0.5);
+    font-weight: 500;
+    font-family: Poppins, sans-serif;
+	font-size: 0.8vw;
+    margin-top: 0.3vw;
+    transition: 0.10s;
+}
+
+.transferButton:hover p {
+    color: rgb(0, 218, 73);
+    transition: 0.10s;
+}
+
+.transferButton:hover .transferIcon{
+    color: rgb(0, 218, 73);
+    transition: 0.10s;
+}
+
+.citationButton {
+    position: absolute;
+    top: 21vw;
+    width: 10vw;
+    height: 7vw;
+    background-color: rgba(0,0,0,0.0);
+    border-bottom: 5px solid;
+    border-image-slice: 1;
+    border-width: 1px;
+    border-image-source: linear-gradient(to left, rgba(0,0,0,0) 1%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 99%);
+}
+
+.citationIcon {
+    margin-top: 1.3vw;
+	font-weight: 700;
+	font-size: 3vw;
+    color: rgba(0,0,0,0.5);
+    transition: 0.10s;
+}
+
+.citationText p {
+    color: rgba(0,0,0,0.5);
+    font-weight: 500;
+    font-family: Poppins, sans-serif;
+	font-size: 0.8vw;
+    margin-top: 0.3vw;
+    transition: 0.10s;
+}
+
+.citationButton:hover p {
+    color: rgb(0, 218, 73);
+    transition: 0.10s;
+}
+
+.citationButton:hover .citationIcon{
+    color: rgb(0, 218, 73);
+    transition: 0.10s;
+}
+
+.walletMoneyCard {
+    position: absolute;
+    width: 16vw;
+    height: 8vw;
+    left: 11vw;
+    top: 7vw;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgb(0, 218, 73), rgb(0, 252, 126));
+}
+
+.walletMoneyCard h1 {
+    font-family: Poppins, sans-serif;
+    font-size: 2vw;
+    color: #fff;
+    margin-left: 0.7vw;
+    margin-top: 0.7vw;
+}
+
+.walletMoneyCard img {
+    float: left;
+    width: 2vw;
+    margin-left: 0.7vw;
+    margin-top: -0.2vw;
+}
+
+.walletMoneyCard span {
+    
+    font-size: 1.5vw;
+    color: #fff;
+    margin-left: 0.7vw;
+    margin-top: 0vw;
+}
+
+.walletMoneyCard span {
+    
+    font-size: 1.5vw;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    margin-left: 0.7vw;
+    margin-top: 0vw;
+}
+
+.bankMoneyCard {
+    position: absolute;
+    width: 16vw;
+    height: 8vw;
+    left: 28vw;
+    top: 7vw;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgb(0, 218, 73), rgb(0, 252, 126));
+}
+
+.bankMoneyCard h1 {
+    font-family: Poppins, sans-serif;
+    font-size: 2vw;
+    color: #fff;
+    margin-left: 0.7vw;
+    margin-top: 0.7vw;
+}
+
+.bankMoneyCard img {
+    float: left;
+    width: 2vw;
+    margin-left: 0.7vw;
+    margin-top: -0.2vw;
+}
+
+.bankMoneyCard span {
+    
+    font-size: 1.5vw;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    margin-left: 0.7vw;
+    margin-top: 0vw;
+}
+
+.infoCard {
+    position: absolute;
+    width: 19vw;
+    height: 11vw;
+    left: 45vw;
+    top: 7vw;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgb(0, 218, 73), rgb(0, 252, 126));
+}
+
+.infoImg {
+    position: absolute;
+    left: 0.5vw;
+    top: 0.5vw;
+}
+
+.infoImg img {
+    width: 4vw;
+}
+
+.infoCardNumber {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.infoCardNumber p {
+    font-size: 1.8vw;
+    font-weight: 999;
+    color: #fff;
+}
+
+.infoCardDataName {
+    position: absolute;
+    top: 65%;
+    left: 5%;
+}
+
+.infoCardDataName p {
+    font-family: Poppins, sans-serif;
+    font-size: 0.7vw;
+    color: rgba(220,220,220,1);
+    line-height: 1vw;
+}
+
+.infoCardDataName span {
+    font-family: Poppins, sans-serif;
+    font-size: 1vw;
+    color: rgba(255,255,255,1);
+}
+
+
+.infoCardDataValid {
+    position: absolute;
+    top: 65%;
+    left: 77%;
+}
+
+.infoCardDataValid p {
+    font-family: Poppins, sans-serif;
+    font-size: 0.7vw;
+    color: rgba(220,220,220,1);
+    line-height: 1vw;
+}
+
+.infoCardDataValid span {
+    font-family: Poppins, sans-serif;
+    font-size: 1vw;
+    color: rgba(255,255,255,1);
+}
+
+.userInfos {
+    display: none;
+    position: absolute;
+    height: 19vw;
+    width: 18vw;
+    background-color: #fff;
+    left: 70%;
+    top: 45%;
+}
+
+.infosArrow {
+    position: absolute;
+    top: 44.7%;
+    left: 83%;
+    
+}
+.infosArrow i {
+    font-size: 2vw;
+    color: rgb(0, 218, 73);
+}
+
+.infosArrow:hover {
+    top: 45.5%;
+    transition: 0.25s;
+}
+
+.infosClose {
+    display: none;
+    position: absolute;
+    top: 93.5%;
+    left: 83%;
+    
+}
+.infosClose i {
+    font-size: 2vw;
+    color: rgb(0, 218, 73);
+    
+}
+
+.infosClose:hover {
+    top: 93.2%;
+    transition: 0.25s;
+    
+}
+
+.userInfosTitle {
+    margin-left: 0.5vw;
+    margin-top: -0.7vw;
+}
+
+.userInfosTitle h1 {
+    font-family: Poppins, sans-serif;
+    font-size: 1.3vw;
+    color: rgba(0,0,0,0.5);
+}
+
+.userName {
+    
+    margin-left: 0.5vw;
+}
+
+.userName p {
+    font-family: Poppins, sans-serif;
+	font-size: 0.9vw;
+    color: rgba(0,0,0,0.75);
+}
+
+.userName span {
+    margin-left: 0.5vw;
+}
+
+.userAge {
+    
+    margin-left: 0.5vw;
+}
+
+.userAge p {
+    font-family: Poppins, sans-serif;
+	font-size: 0.9vw;
+    color: rgba(0,0,0,0.75);
+}
+
+.userAge span {
+    margin-left: 0.5vw;
+}
+
+.userRegister {
+    
+    margin-left: 0.5vw;
+}
+
+.userRegister p {
+    font-family: Poppins, sans-serif;
+	font-size: 0.9vw;
+    color: rgba(0,0,0,0.75);
+}
+
+.userRegister span {
+    margin-left: 0.5vw;
+}
+
+.userPassport {
+    
+    margin-left: 0.5vw;
+}
+
+.userPassport p {
+    font-family: Poppins, sans-serif;
+	font-size: 0.9vw;
+    color: rgba(0,0,0,0.75);
+}
+
+.userPassport span {
+    margin-left: 0.5vw;
+}
+
+.userHistory {
+    position: absolute;
+    width: 33.1vw;
+    height: 21.1vw;
+    background-color: #fff;
+    border-radius: 10px;
+    top: 40%;
+    left: 16.9%;
+}
+
+.historySideContainer {
+    position: absolute;
+    width: 0.5vw;
+    height: 3vw;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 3px;
+    background-color: rgb(0, 218, 73);
+}
+
+.historyTitle {
+    margin-left: 0vw;
+    margin-top: -0.82vw;
+    height: 3.5vw;
+    width: 33.1vw;
+    background-color: rgba(0,0,0,0);
+    border-bottom: 5px solid;
+    border-image-slice: 1;
+    border-width: 1px;
+    border-image-source: linear-gradient(to left, rgba(0,0,0,0) 1%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 99%);
+}
+
+.historyTitle p {
+    font-family: Poppins, sans-serif;
+    line-height: 4.5vw;
+    margin-left: 1vw;
+    font-size: 1vw;
+    color: rgba(0,0,0,0.8);
+}
+
+.makeADeposit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 65vw;
+    height: 40vw;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0,0.5);
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.watermark {
+    position: absolute;
+    background-image: url('https://cdn.discordapp.com/attachments/740912067095035955/766747831242981436/marca_dagua.png');
+    width: 65vw;
+    left: 0%;
+    height: 40vw;
+}
+
+.fleecaImage {
+    margin-top: 2vw;
+}
+
+.fleecaImage img {
+    width: 10vw;
+}
+
+.fleecaImage p {
+    font-family: Poppins, sans-serif;
+    font-size: 1vw;
+}
+
+.cont-depositar {
+    position: absolute;
+    left: 50%;
+    top:50%;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 10px;
+    background-color: rgb(255,255,255);
+    transform: translate(-50%,-50%);
+}
+
+.form-depositar{
+    position: absolute;
+    width: 11vw;
+    top: 12vw;
+    left: 7.4vw;
+    border: none;
+    border-bottom: 2px solid #C5C5C5;
+    transition: all .2s ease-in-out;
+}
+
+.form-depositar:hover{
+    border: none;
+    border-bottom: 2px solid #45FF73;
+	transform: scale(1.04);
+}
+
+
+
+.confirmar-depositar{
+    position: absolute;
+    width: 8vw;
+    height: 1.5vw;
+    top: 17vw;
+    left: 9vw;
+    background-image: linear-gradient(to right, rgb(0, 218, 73), rgb(0, 252, 126));
+    border-radius: 12px;
+    transition: all .2s ease-in-out;
+}
+
+.confirmar-depositar:hover{
+    transform: scale(1.05);
+}
+
+.confirmar-depositar:hover .text-confirmar-depositar {
+    color: #fff;
+    transition: 0.15s;
+}
+
+.text-confirmar-depositar{
+    position: absolute;
+    top: 0.22vw;
+    left: 2.2vw;
+    font-family: Poppins, sans-serif;
+    font-size: 0.75vw;
+    transition: 0.15s;
+    color: #2C2F33;
+}
+
+.backButtonDeposit {
+    position: absolute;
+    top: 0.3vw;
+    left: 82%;
+    
+}
+
+.backButtonDeposit img {
+    width: 4vw;
+    transition: 0.25s;
+}
+
+.backButtonDeposit:hover img {
+    opacity: 0.6;
+    transform: scale(1.05,1.05);
+    transition: 0.25s;
+}
+
+.makeASaque {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 65vw;
+    height: 40vw;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0,0.5);
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.watermark {
+    position: absolute;
+    background-image: url('https://cdn.discordapp.com/attachments/740912067095035955/766747831242981436/marca_dagua.png');
+    width: 65vw;
+    left: 0%;
+    height: 40vw;
+}
+
+.fleecaImage {
+    margin-top: 2vw;
+}
+
+.fleecaImage img {
+    width: 10vw;
+}
+
+.fleecaImage p {
+    font-family: Poppins, sans-serif;
+    font-size: 1vw;
+}
+
+.cont-sacar {
+    position: absolute;
+    left: 50%;
+    top:50%;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 10px;
+    background-color: rgb(255,255,255);
+    transform: translate(-50%,-50%);
+}
+
+.form-sacar{
+    position: absolute;
+    width: 11vw;
+    top: 12vw;
+    left: 7.4vw;
+    border: none;
+    border-bottom: 2px solid #C5C5C5;
+    transition: all .2s ease-in-out;
+}
+
+.form-sacar:hover{
+    border: none;
+    border-bottom: 2px solid #45FF73;
+}
+
+.form-sacar:hover{
+    transform: scale(1.04);
+}
+
+.confirmar-sacar{
+    position: absolute;
+    width: 8vw;
+    height: 1.5vw;
+    top: 17vw;
+    left: 9vw;
+    background-image: linear-gradient(to right, rgb(0, 218, 73), rgb(0, 252, 126));
+    border-radius: 12px;
+    transition: all .2s ease-in-out;
+}
+
+.confirmar-sacar:hover{
+    transform: scale(1.05);
+}
+
+.confirmar-sacar:hover .text-confirmar-sacar {
+    color: #fff;
+    transition: 0.15s;
+}
+
+.text-confirmar-sacar{
+    position: absolute;
+    top: 0.22vw;
+    left: 2.2vw;
+    font-family: Poppins, sans-serif;
+    font-size: 0.75vw;
+    transition: 0.15s;
+    color: #2C2F33;
+}
+
+.backButtonSacar {
+    position: absolute;
+    top: 0.3vw;
+    left: 82%;
+    
+}
+
+.backButtonSacar img {
+    width: 4vw;
+    transition: 0.25s;
+}
+
+.backButtonSacar:hover img {
+    opacity: 0.6;
+    transform: scale(1.05,1.05);
+    transition: 0.25s;
+}
+
+.makeATransfer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 65vw;
+    height: 40vw;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0,0.5);
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.watermark {
+    position: absolute;
+    background-image: url('https://cdn.discordapp.com/attachments/740912067095035955/766747831242981436/marca_dagua.png');
+    width: 65vw;
+    left: 0%;
+    height: 40vw;
+}
+
+.fleecaImage {
+    margin-top: 2vw;
+}
+
+.fleecaImage img {
+    width: 10vw;
+}
+
+.fleecaImage p {
+    font-family: Poppins, sans-serif;
+    font-size: 1vw;
+}
+
+.cont-trans {
+    position: absolute;
+    left: 50%;
+    top:50%;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 10px;
+    background-color: rgb(255,255,255);
+    transform: translate(-50%,-50%);
+}
+
+.form-trans-to{
+    position: absolute;
+    width: 11vw;
+    top: 8.5vw;
+    left: 7.4vw;
+    border: none;
+    border-bottom: 2px solid #C5C5C5;
+    transition: all .2s ease-in-out;
+}
+
+.form-trans-amount{
+    position: absolute;
+    width: 11vw;
+    top: 13vw;
+    left: 7.4vw;
+    border: none;
+    border-bottom: 2px solid #C5C5C5;
+    transition: all .2s ease-in-out;
+}
+
+.form-trans-to:hover{
+    border: none;
+    border-bottom: 2px solid #45FF73;
+    transform: scale(1.04);
+}
+
+.form-trans-amount:hover{
+    border: none;
+    border-bottom: 2px solid #45FF73;
+    transform: scale(1.04);
+}
+
+.confirmar-trans{
+    position: absolute;
+    width: 8vw;
+    height: 1.5vw;
+    top: 17vw;
+    left: 9vw;
+    background-image: linear-gradient(to right, rgb(0, 218, 73), rgb(0, 252, 126));
+    border-radius: 12px;
+    transition: all .2s ease-in-out;
+}
+
+.confirmar-trans:hover{
+    transform: scale(1.05);
+}
+
+.confirmar-trans:hover .text-confirmar-trans {
+    color: #fff;
+    transition: 0.15s;
+}
+
+.text-confirmar-trans{
+    position: absolute;
+    top: 0.22vw;
+    left: 2.2vw;
+    font-family: Poppins, sans-serif;
+    font-size: 0.75vw;
+    transition: 0.15s;
+    color: #2C2F33;
+}
+
+.backButtonTrans {
+    position: absolute;
+    top: 0.3vw;
+    left: 82%;
+    
+}
+
+.backButtonTrans img {
+    width: 4vw;
+    transition: 0.25s;
+}
+
+.backButtonTrans:hover img {
+    opacity: 0.6;
+    transform: scale(1.05,1.05);
+    transition: 0.25s;
+}
+
+
+
+
+
+.makeACitation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 65vw;
+    height: 40vw;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0,0.5);
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.watermark {
+    position: absolute;
+    background-image: url('https://cdn.discordapp.com/attachments/740912067095035955/766747831242981436/marca_dagua.png');
+    width: 65vw;
+    left: 0%;
+    height: 40vw;
+}
+
+.fleecaImage {
+    margin-top: 2vw;
+}
+
+.valorPendente{
+    margin-top: 2vw;
+}
+
+.valorPendente p {
+    font-family: Poppins, sans-serif;
+    font-size: 0.8vw;
+}
+
+.fleecaImage img {
+    width: 10vw;
+}
+
+.fleecaImage p {
+    font-family: Poppins, sans-serif;
+    font-size: 1vw;
+}
+
+.cont-multa {
+    position: absolute;
+    left: 50%;
+    top:50%;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 10px;
+    background-color: rgb(255,255,255);
+    transform: translate(-50%,-50%);
+}
+
+.form-multa{
+    position: absolute;
+    width: 11vw;
+    top: 14vw;
+    left: 7.4vw;
+    border: none;
+    border-bottom: 2px solid #C5C5C5;
+    transition: all .2s ease-in-out;
+}
+
+.form-multa:hover{
+    border: none;
+    border-bottom: 2px solid #45FF73;
+}
+
+.form-multa:hover{
+    transform: scale(1.04);
+}
+
+.confirmar-multa{
+    position: absolute;
+    width: 8vw;
+    height: 1.5vw;
+    top: 19vw;
+    left: 9vw;
+    background-image: linear-gradient(to right, rgb(0, 218, 73), rgb(0, 252, 126));
+    border-radius: 12px;
+    transition: all .2s ease-in-out;
+}
+
+.confirmar-multa:hover{
+    transform: scale(1.05);
+}
+
+.confirmar-multa:hover .text-confirmar-multa {
+    color: #fff;
+    transition: 0.15s;
+}
+
+.text-confirmar-multa{
+    position: absolute;
+    top: 0.22vw;
+    left: 2.2vw;
+    font-family: Poppins, sans-serif;
+    font-size: 0.75vw;
+    transition: 0.15s;
+    color: #2C2F33;
+}
+
+.backButtonMulta {
+    position: absolute;
+    top: 0.3vw;
+    left: 82%;
+    
+}
+
+.backButtonMulta img {
+    width: 4vw;
+    transition: 0.25s;
+}
+
+.backButtonMulta:hover img {
+    opacity: 0.6;
+    transform: scale(1.05,1.05);
+    transition: 0.25s;
+}
+
+.detalhesButton {
+    position: absolute;
+    width: 8vw;
+    height: 1.5vw;
+    left: 9vw;
+    top: 11.4vw;
+    background-image: linear-gradient(to right, rgb(0, 218, 73), rgb(0, 252, 126));
+    border-radius: 12px;
+    transition: 0.15s;
+}
+
+.detalhesButton span {
+    font-family: Poppins, sans-serif;
+    font-size: 0.75vw;
+    color: #2C2F33;
+    line-height: 1.5vw;
+    transition: 0.15s;
+}
+
+.detalhesButton:hover {
+    transform: scale(1.05);
+    transition: 0.15s;
+}
+
+.detalhesButton:hover span {
+    color: #fff;
+    transition: 0.15s;
+}
+
+.extractContainer {
+    height: 18.4vw;
+    width: 33.1vw;
+    background-color:rgba(0,0,0,0.0);
+    overflow: auto;
+}
+
+.extractContainer p {
+    margin-top: 0.7vw;
+    margin-left: 1vw;
+    font-family: Poppins, sans-serif;
+    font-size: 0.8vw;
+    line-height: 1.5vw;
+}

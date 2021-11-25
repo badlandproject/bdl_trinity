@@ -1,0 +1,403 @@
+div { border: 0; outline: 0; vertical-align: baseline; background: transparent; margin: 0; padding: 0; }
+:focus { outline: 0; }
+::selection { background: transparent; }
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+#actionmenu {
+	top: 50%;
+	left: 50%;
+	display: none;
+	position: fixed;
+	transform: translate(-50%,-50%);
+}
+
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    user-select: none;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: none;
+    cursor:pointer;
+	font-size: 0.8vw;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    background: none;
+    outline: none;
+}
+
+.mainContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 50vw;
+    box-shadow: 1px 0px 0px #000000FF, -1px 0px 0px #000000FF, 0px -1px 0px #000000FF, 0px 1px 0px #000000FF, 0px 1px 5px #000000FF;
+    border:2px solid black;
+    width: 80vw;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+    background-size: 95vw;
+    background-position: center;
+    background-image: url('https://cdn.discordapp.com/attachments/740912067095035955/787013874452135966/bg.png');
+    transition:.5s ease;
+}
+/* ------------- FIRST LOC ------------- */
+#firstLoc {
+    position: absolute;
+    color: rgba(255,255,255,0.85);
+    font-size: 1.8vw;
+    left: 69.5%;
+    top: 47.5%;
+    transition:.3s ease;
+}
+
+#firstLoc:hover {
+    color: rgba(255,255,255,1);
+    transition: 0.15s;
+    transform: scale(1.1);
+}
+
+#firstLoc h1 {
+    position: absolute;
+    font-size: 0.9vw;
+    font-weight: 500;
+    font-family: Poppins, sans-serif;
+    display: none;
+    margin-top: -1.5vw;
+    margin-left: -1vw;
+    transition: 0.15s;
+}
+
+#firstLoc:hover h1 {
+    display: block;
+    transition: 0.15s;
+}
+
+/* ------------- SECOND LOC ------------- */
+#secondLoc {
+    position: absolute;
+    color: rgba(255,255,255,0.85);
+    font-size: 1.8vw;
+    left: 74%;
+    top: 69%;
+    transition:.3s ease;
+}
+
+#secondLoc:hover {
+    color: rgba(255,255,255,1);
+    transition: 0.15s;
+    transform: scale(1.1);
+}
+
+#secondLoc h1 {
+    position: absolute;
+    font-size: 0.9vw;
+    font-weight: 500;
+    font-family: Poppins, sans-serif;
+    display: none;
+    margin-top: -1.5vw;
+    margin-left: -0.4vw;
+    transition: 0.15s;
+}
+
+#secondLoc:hover h1 {
+    display: block;
+    transition: 0.15s;
+}
+
+/* ------------- THIRD LOC ------------- */
+#thirdLoc {
+    position: absolute;
+    color: rgba(255,255,255,0.85);
+    font-size: 1.8vw;
+    left: 11%;
+    top: 52%;
+    transition:.3s ease;
+}
+
+#thirdLoc:hover {
+    color: rgba(255,255,255,1);
+    transition: 0.15s;
+    transform: scale(1.1);
+}
+
+#thirdLoc h1 {
+    width: 5vw;
+    position: absolute;
+    font-size: 0.9vw;
+    font-weight: 500;
+    font-family: Poppins, sans-serif;
+    display: none;
+    margin-top: -1.5vw;
+    margin-left: -1.5vw;
+    transition: 0.15s;
+}
+
+#thirdLoc:hover h1 {
+    display: block;
+    transition: 0.15s;
+}
+
+/* ------------- FOURTH LOC ------------- */
+#fourthLoc {
+    position: absolute;
+    color: rgba(255,255,255,0.85);
+    font-size: 1.8vw;
+    left: 34%;
+    top: 27%;
+    transition:.3s ease;
+}
+
+#fourthLoc:hover {
+    color: rgba(255,255,255,1);
+    transition: 0.15s;
+    transform: scale(1.1);
+}
+
+#fourthLoc h1 {
+    width: 7vw;
+    position: absolute;
+    font-size: 0.9vw;
+    font-weight: 500;
+    font-family: Poppins, sans-serif;
+    display: none;
+    margin-top: -1.5vw;
+    margin-left: -1.95vw;
+    transition: 0.15s;
+}
+
+#fourthLoc:hover h1 {
+    display: block;
+    transition: 0.15s;
+}
+
+/* ------------- FIFTH LOC ------------- */
+#fifthLoc {
+    position: absolute;
+    color: rgba(255,255,255,0.85);
+    font-size: 1.8vw;
+    left: 90%;
+    top: 65%;
+    transition:.3s ease;
+}
+
+#fifthLoc:hover {
+    color: rgba(255,255,255,1);
+    transition: 0.15s;
+    transform: scale(1.1);
+}
+
+#fifthLoc h1 {
+    width: 7vw;
+    position: absolute;
+    font-size: 0.9vw;
+    font-weight: 500;
+    font-family: Poppins, sans-serif;
+    display: none;
+    margin-top: -1.5vw;
+    margin-left: -1.95vw;
+    transition: 0.15s;
+}
+
+#fifthLoc:hover h1 {
+    display: block;
+    transition: 0.15s;
+}
+
+/* ------------- SIXTH LOC ------------- */
+#sixthLoc {
+    position: absolute;
+    color: rgba(255,255,255,0.85);
+    font-size: 1.8vw;
+    left: 73.25%;
+    top: 52%;
+    transition:.3s ease;
+}
+
+#sixthLoc:hover {
+    color: rgba(255,255,255,1);
+    transition: 0.15s;
+    transform: scale(1.1);
+}
+
+#sixthLoc h1 {
+    width: 7vw;
+    position: absolute;
+    font-size: 0.9vw;
+    font-weight: 500;
+    font-family: Poppins, sans-serif;
+    display: none;
+    margin-top: -1.5vw;
+    margin-left: -1.25vw;
+    transition: 0.15s;
+}
+
+#sixthLoc:hover h1 {
+    display: block;
+    transition: 0.15s;
+}
+
+#lastLoc {
+    position: absolute;
+    float: left;
+    top: 94%;
+    left: 2%;
+    color: rgba(255,255,255,0.65);
+    font-family: Poppins, sans-serif;
+    transition: 0.15s;
+}
+
+#lastLoc i {
+    float: left;
+    font-size: 2vw;
+}
+
+#lastLoc p {
+    float: left;
+    margin-left: 0.5vw;
+    margin-top: 0.25vw;
+    font-size: 1.1vw;
+}
+
+#lastLoc:hover {
+    color: rgba(255,255,255,0.99);
+    transition: 0.15s;
+}
+
+.confirmScreen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.confirmContainer {
+    position: absolute;
+    background-color: rgb(34, 34, 34);
+    width: 25vw;
+    height: 25vw;
+    top: 50%;
+    border-radius: 3px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+}
+
+.confirmTitle {
+    margin-left: 1.5vw;
+}
+
+.confirmTitle p {
+    font-family: Poppins, sans-serif;
+    font-size: 1.1vw;
+    color: rgba(255,255,255,0.65);
+    margin-top: 0.75vw;
+}
+
+.borderDiv {
+    margin:auto;
+    margin-top: -0.5vw;
+    width: 90%;
+    border-bottom: 2px solid;
+    border-color: rgba(255,255,255,0.65);
+}
+
+.localImage {
+    margin-top: 1vw;
+    width: 100%;
+    text-align: center;
+}
+
+.localImage img {
+    width: 22.5vw;
+    border-radius: 5px;
+}
+
+.textDescription {
+    width: 100%;
+    margin-left: 1vw;
+}
+
+.textDescription p {
+    font-family: Poppins, sans-serif;
+    font-size: 0.8vw;
+    color: rgba(255,255,255,0.65);
+}
+
+.buttonSection {
+    width: 100%;
+}
+
+.confirmButton {
+    position: absolute;
+    width: 6vw;
+    height: 2vw;
+    background-color:rgb(27, 165, 0);
+    float: left;
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+    left: 25%;
+    transition: 0.15s;
+}
+
+.confirmButton:hover {
+    background-color:rgb(18, 110, 0);
+    transition: 0.15s;
+}
+
+.confirmButton:hover p {
+    color: rgba(255,255,255,0.65);
+    transition: 0.15s;
+}
+
+.confirmButton p {
+    font-family: Poppins, sans-serif;
+    font-size: 0.85vw;
+    color: rgba(255,255,255,0.95);
+    margin-top: 0.35vw;
+}
+
+.cancelButton {
+    position: absolute;
+    width: 6vw;
+    height: 2vw;
+    background-color:rgb(206, 9, 9);
+    float: left;
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+    left: 51%;
+	transition: 0.15s;
+}
+
+.cancelButton p {
+    font-family: Poppins, sans-serif;
+    font-size: 0.85vw;
+    color: rgba(255,255,255,0.95);
+    margin-top: 0.35vw;
+}
+
+.cancelButton:hover {
+    background-color:rgb(138, 0, 0);
+    transition: 0.15s;
+}
+
+.cancelButton:hover p {
+    color: rgba(255,255,255,0.65);
+    transition: 0.15s;
+}

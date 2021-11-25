@@ -1,0 +1,23 @@
+#body {
+	display: none;
+	overflow: hidden;
+}
+
+#outerdiv {
+	right: 325px;
+	bottom: 40px;
+	border-radius:2px;
+	height: 105px;
+	width: 9px;
+	position: fixed;
+	background: rgba(0,0,0,0.5);
+	
+}
+
+#innerdiv {
+	position: absolute;
+	background-image: linear-gradient(to top, rgba(255,171,0,0.8) ,rgba(255,193,67,0.8));
+	border-radius: 2px;
+	width: 100%;
+	bottom: 0;
+}

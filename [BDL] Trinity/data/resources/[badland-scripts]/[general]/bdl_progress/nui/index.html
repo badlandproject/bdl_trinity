@@ -1,0 +1,47 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<script>
+			var timeoutFn = undefined;
+			$(document).ready(function(){
+				window.addEventListener("message",function(event){
+					$("#body").is(":visible") && timeoutFn && clearTimeout(timeoutFn);
+
+					$("#body").show();
+
+					var start = new Date();
+					var maxTime = event.data.time;
+					var timeoutVal = Math.floor(maxTime/100);
+					animateUpdate();
+
+					function updateProgress(percentage){
+						$("#innerdiv").css("height",percentage+"%");
+					}
+
+					function animateUpdate(){
+						var now = new Date();
+						var timeDiff = now.getTime() - start.getTime();
+						var perc = Math.round((timeDiff/maxTime)*100);
+						if (perc <= 100){
+							updateProgress(perc);
+							timeoutFn = setTimeout(animateUpdate,timeoutVal);
+						} else {
+							$("#body").hide();
+							clearTimeout(timeoutFn);
+							timeoutFn = undefined;
+						}
+					}
+				});
+			});
+		</script>
+		<div id="body">
+			<div id="outerdiv">
+				<div id="innerdiv"></div>
+			</div>
+		</div>
+	</body>
+</html>

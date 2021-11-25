@@ -1,0 +1,376 @@
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.mainContainer {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 36vw;
+    width: 67vw;
+    background-color:rgba(255,255,255,1.0);
+    border-radius: 5px;
+    top: 50%;
+    left: 50%
+}
+
+.aboveContainer {
+    position: absolute;
+    width: 65vw;
+    height: 8vw;
+    background-color:rgba(0,0,0,0);
+}
+
+.nationWatermark {
+    position: absolute;
+    top: 0.2vw;
+    width: 15vw;
+    border-right: 1px solid transparent;
+    -moz-border-image: -moz-linear-gradient(top, rgba(0,0,0,0) 10%,  rgba(0,0,0,0.7) 50%, rgba(0,0,0,0) 90%);
+    -webkit-border-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 10%,  rgba(0,0,0,0.7) 50%, rgba(0,0,0,0) 90%);
+    border-image: linear-gradient(to bottom, rgba(0,0,0,0) 10%,  rgba(0,0,0,0.7) 50%, rgba(0,0,0,0) 90%);
+    border-image-slice: 1;
+}
+
+.nationWatermark img {
+    width: 13vw;
+}
+
+.storeCategories {
+    margin-left: 16vw;
+    margin-top: 1.5vw;
+    width: 6vw;
+    font-size: 0.85vw;
+}
+
+.knives:hover {
+    color: rgba(255,10,10,1.0);
+}
+
+.guns:hover {
+    color: rgba(255,10,10,1.0);
+}
+
+.ammo:hover {
+    color: rgba(255,10,10,1.0);
+}
+
+.closeButton {
+    position: absolute;
+    left: 61vw;
+    top: 2.5vw;
+}
+
+.closeButton img {
+    width: 5vw;
+    opacity: 0.8;
+    transition: 0.25s;
+}
+
+.closeButton:hover img {
+    opacity: 0.5;
+	transform: scale(1.05,1.05);
+    transition: 0.25s;
+}
+
+.itensContainer {
+    position: absolute;
+    width: 65.7vw;
+    height: 27vw;
+    background-color: rgba(255,50,50,1.0);
+    border-radius: 8px;
+    left: 50%;
+    top: 59.5%;
+    transform: translate(-50%, -50%);
+    overflow: auto;
+}
+
+.itemIlustration {
+    float: left;
+    width: 12vw;
+    height: 12vw;
+    margin-left: 0.93vw;
+    margin-top: 1vw;
+    margin-bottom: 0.5vw;
+    border-radius: 5px;
+
+}
+
+.itemIlustration img {
+    width: 12vw;
+    height: 12vw;
+    transition: 0.25s;
+    border-radius: 5px;
+}
+
+.itemHoverContainer {
+    position: relative;
+    margin-top: -4.25vw;
+    width: 12vw;
+    height: 4vw;
+    background-color: rgba(255,255,255,0.0);
+}
+
+.tituloItem {
+    background-color:rgba(255,255,255,1.0);
+    color: black;
+    width: 12vw;
+    height: 4vw;
+    margin-top:-0.85vw;
+    border-radius: 5px;
+}
+
+.tituloItem p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:0.9vw;
+    margin-top: 1vw;
+    margin-left: 0.5vw;
+}
+
+.itemName p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:0.9vw;
+    margin-left: 0.5vw;
+    margin-top: -1vw;
+    color: rgba(100,100,100,0.8);
+}
+
+.price p{
+    color: black;
+    
+    margin-top:-0.85vw;
+    border-radius: 5px;
+}
+
+.price p {
+    font-family: Poppins, sans-serif;
+    font-size:0.9vw;
+    margin-left: 0.5vw;
+}
+
+.itemTitle {
+    transition: 0.25s;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: left;
+  }
+
+.itemIlustration:hover #image {
+    opacity: 0.8;
+    transition: 0.25s;
+  }
+  
+.itemIlustration:hover .itemTitle {
+    opacity: 1;
+    transition: 0.25s;
+}
+
+.confirm {
+    position: relative;
+    width: 3vw;
+    height: 3vw;
+    margin-top: -9vw;
+    margin-left: 4.5vw;
+}
+
+.confirm img{
+    width: 3vw;
+    height: 3vw;
+    opacity: 0;
+}
+
+.confirm:hover img {
+    transform: scale(1.1,1.1);
+    opacity: 0.9
+}
+
+.amountContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 36vw;
+    width: 67vw;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.amountCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 20vw;
+    width: 20vw;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 1.0);
+    transform: translate(-50%, -50%);
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  background: transparent;
+  margin: 0; 
+}
+
+input[type="number"]
+{
+    background: transparent;
+    border: none;
+}
+
+input[type="text"]
+{
+    background: transparent;
+    border: none;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+input{
+    border: none;
+    width: 10vw;
+    height: 1.5vw;
+    color: rgba(0,0,0,0.9);
+    font-size: 13;
+    text-decoration: none;
+    font-family: 'Roboto';
+}
+
+input:placeholder{
+    text-decoration: none;
+    color: rgba(50,50,50,0.7);
+}
+
+.amountWatermark {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.amountWatermark img {
+    width: 12vw;
+}
+
+.putAmount {
+    position: absolute;
+    top: 35%;
+    width: 20vw;
+}
+
+.putAmount p {
+    font-size: 1vw;
+    font-family: Poppins, sans-serif;
+}
+
+.confirmDesc {
+    position: absolute;
+    
+    top: 50%;
+    width: 20vw;
+}
+
+.confirmDesc p {
+    font-size: 0.75vw;
+    font-family: Poppins, sans-serif;
+    color: rgba(100,100,100,1.0);
+}
+
+#amount{
+    position: absolute;
+    width: 10vw;
+    top: 60%;
+    left: 50%;
+    border: none;
+    border-bottom: 2px solid rgba(255,50,50,1.0);
+    color: transparent;
+    transition: all .2s ease-in-out;
+    transform: translate(-50%, -50%);
+}
+
+#amount:hover{
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,0.7);
+    
+}
+
+.buyButton {
+    position: absolute;
+    width: 3vw;
+    height: 3vw;
+    top: 70%;
+    left: 42%;
+}
+.buyButton img{
+    width: 3vw;
+    height: 3vw;
+    opacity: 1;
+    transition: 0.25s;
+    border-radius: 5px;
+}
+
+.buyButton:hover img {
+    transform: scale(1.05,1.05);
+    opacity: 0.6;
+    transition: 0.25s;
+}
+
+.closeAmount {
+    position: absolute;
+    width: 4vw;
+    top: 3%;
+    left: 65%;
+}
+
+.closeAmount img{
+    width: 4vw;
+    opacity: 1;
+    transition: 0.25s;
+}
+
+.closeAmount:hover img {
+    transform: scale(1.1,1.1);
+    opacity: 0.5;
+    transition: 0.25s;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 1px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}

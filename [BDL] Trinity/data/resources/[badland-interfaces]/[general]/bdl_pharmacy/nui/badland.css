@@ -1,0 +1,303 @@
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    user-select: none;
+    box-sizing: border-box;
+}
+
+button {
+    position: absolute;
+    background: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    color: rgba(255,255,255,0.45);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1vw;
+    left: 0vw;
+    top: 0vw;
+    
+    transition: 0.25s;
+}
+
+.mainContainer {
+    position: absolute;
+    width: 54vw;
+    height: 42vw;
+    top: 55%;
+    left: 50%;
+    border-radius: 5px;
+    transform: translate(-50%,-50%);
+}
+
+.bottomContainer {
+    position: absolute;
+    width: 54vw;
+    height: 35vw;
+    background-color: rgba(255,255,255,1.0);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.storeCategories {
+    margin-top: 1.2vw;
+    margin-left: 13vw;
+    width: 3vw;
+    font-size: 0.9vw;
+}
+
+.food:hover {
+    color: rgba(15,180,75,1.0)
+}
+
+.drink:hover {
+    color: rgba(15,180,75,1.0)
+}
+
+.utilities:hover {
+    color: rgba(15,180,75,1.0)
+}
+
+.waterMark247 {
+	width: 9vw;
+	height: 5vw;
+	position: absolute;
+	left: 0vw;
+	top: 1vw;
+	border-right: 1px solid transparent;
+    -moz-border-image: -moz-linear-gradient(top, rgba(0,0,0,0) 10%,  rgba(0,0,0,0.9) 50%, rgba(0,0,0,0) 90%);
+    -webkit-border-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 10%,  rgba(0,0,0,0.7) 50%, rgba(0,0,0,0) 90%);
+    border-image: linear-gradient(to bottom, rgba(0,0,0,0) 10%,  rgba(0,0,0,0.7) 50%, rgba(0,0,0,0) 90%);
+    border-image-slice: 1;
+	background-color: rgba(255,0,0,0.0);
+}
+
+.waterMark247 img {
+	width: 6.5vw;
+	margin-top: -0.75vw;
+	margin-left: 0.5vw;
+}
+
+.closeButton {
+    position: absolute;
+    left: 48.3vw;
+    top: 2.5vw;
+}
+
+.closeButton img {
+    width: 5vw;
+    opacity: 0.8;
+    transition: 0.25s;
+}
+
+.closeButton:hover img {
+    opacity: 0.5;
+	transform: scale(1.05,1.05);
+    transition: 0.25s;
+}
+
+
+.itensContainer {
+    position: absolute;
+    width: 53vw;
+    height: 27vw;
+    background-color: rgba(0,175,175,1.0);
+    left: 50%;
+    top: 59%;
+    transform: translate(-50%,-50%);
+    border-radius: 7px;
+    overflow: auto;
+}
+
+.whiteBackground {
+    background-color: rgba(255,255,255,1.0);
+    float: left;
+    width: 12vw;
+    height: 12vw;
+    margin-left: 1vw;
+    margin-top: 1vw;
+    border-radius: 5px;
+}
+
+.itemIlustration {
+    float: left;
+    width: 12vw;
+    height: 12vw;
+    margin-left: 0.93vw;
+    margin-top: 1vw;
+    margin-bottom: 0.5vw;
+    border-radius: 5px;
+
+}
+
+.itemIlustration img {
+    width: 12vw;
+    height: 12vw;
+    transition: 0.25s;
+    border-radius: 5px;
+}
+
+.itemHoverContainer {
+    position: relative;
+    margin-top: -4.25vw;
+    width: 12vw;
+    height: 4vw;
+    background-color: rgba(255,255,255,0.0);
+}
+
+.tituloItem {
+    background-color:rgba(255,255,255,1.0);
+    color: black;
+    width: 12vw;
+    height: 4vw;
+    margin-top:-0.85vw;
+    border-radius: 5px;
+}
+
+.tituloItem p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:0.9vw;
+    margin-top: 1vw;
+    margin-left: 0.5vw;
+}
+
+.itemName p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:0.9vw;
+    margin-left: 0.5vw;
+    margin-top: -1vw;
+    color: rgba(100,100,100,0.8);
+}
+
+.price p{
+    color: black;
+    
+    margin-top:-0.85vw;
+    border-radius: 5px;
+}
+
+.price p {
+    font-family: Poppins, sans-serif;
+    font-size:0.9vw;
+    margin-left: 0.5vw;
+}
+
+.itemTitle {
+    transition: 0.25s;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: left;
+  }
+
+.itemIlustration:hover #image {
+    opacity: 0.8;
+    transition: 0.25s;
+  }
+  
+.itemIlustration:hover .itemTitle {
+    opacity: 1;
+    transition: 0.25s;
+}
+
+.buyImage {
+    position: relative;
+    width: 3vw;
+    height: 3vw;
+    margin-top: -9vw;
+    margin-left: 4.5vw;
+}
+
+.buyImage img{
+    width: 3vw;
+    height: 3vw;
+    opacity: 0;
+}
+
+.buyImage:hover img {
+    transform: scale(1.1,1.1);
+    opacity: 0.9
+}
+
+.amountBackground {
+    position: absolute;
+    width: 54vw;
+    height: 35vw;
+    background-color: rgba(0,0,0,0.6);
+    top: 41.7%;
+    left: 50%;
+    border-radius: 5px;
+    transform: translate(-50%,-50%);
+}
+
+.amountContainer {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    background-color: rgba(255,255,255,1);
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    transform: translate(-50%,-50%);
+}
+
+.marketWatermark {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.marketWatermark img {
+    width: 10vw;
+}
+
+.amountTitle {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.inputStyle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.itemComprar {
+    position: absolute;
+    left: 42.8%;
+    top: 70%;
+}
+
+.itemComprar img {
+    width: 3vw;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 1px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}

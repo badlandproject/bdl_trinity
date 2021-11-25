@@ -1,0 +1,94 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+		<link href="badland.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<div id="actionmenu">
+			<div id="inventory"></div>
+			<div class="dropFromInv">
+				<div class="dropIcon">
+					<i class="fas fa-download"></i>
+				</div>
+				<div class="dropText">
+					<p>Arraste o item para cá</p>
+				</div>
+			</div>
+			<div class="dropFromChest">
+				<div class="dropIcon">
+					<i class="fas fa-download"></i>
+				</div>
+				<div class="dropText">
+					<p>Arraste o item para cá</p>
+				</div>
+			</div>
+			
+			<div class="meio">
+				<div class="amountContainer">
+					<div class="amountContainerTitle">
+						<p> Estocar Item </p>
+						<div class="borderDiv">
+						</div>
+					</div>
+					<div class="amountPutText"> <p> Coloque abaixo a quantidade! </p> </div>
+					<div class="amountSelectorLess" id="less" onclick="subtractValue()"><p> - </p></div>
+					<input id="amount" class="qtd" spellcheck="false" value="" placeholder="Quantidade">
+					<div class="amountSelectorMore" id="more" onclick="incrementValue()"><p> + </p></div>
+					<div class="buttonSpace">
+						<div class="confirmButton" id="confirmar">
+							<p> Confirmar </p>
+						</div>
+						<div class="cancelButton" id="cancelar">
+							<p> Cancelar </p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="dragBlockStore">
+				<div class="dropBlockIcon">
+					<i class="fas fa-download"></i>
+				</div>
+				<div class="dropBlockText">
+					<p>O item virá para cá</p>
+				</div>
+			</div>
+
+			<div class="dragBlockTake">
+				<div class="dropBlockIcon">
+					<i class="fas fa-download"></i>
+				</div>
+				<div class="dropBlockText">
+					<p>O item virá para cá</p>
+				</div>
+			</div>
+			
+			<div class="meioTake">
+				<div class="amountContainer">
+					<div class="amountContainerTitle">
+						<p> Pegar Item </p>
+						<div class="borderDiv">
+						</div>
+					</div>
+					<div class="amountPutText"> <p> Coloque abaixo a quantidade! </p> </div>
+					<div class="amountSelectorLess" id="less" onclick="subtractValue2()"><p> - </p></div>
+					<input id="amountTake" class="qtd" spellcheck="false" value="" placeholder="Quantidade">
+					<div class="amountSelectorMore" id="more" onclick="incrementValue2()"><p> + </p></div>
+					<div class="buttonSpace">
+						<div class="confirmButton" id="confirmarTake">
+							<p> Confirmar </p>
+						</div>
+						<div class="cancelButton" id="cancelar2">
+							<p> Cancelar </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="badland.js" type="text/javascript"></script>
+	</body>
+</html>

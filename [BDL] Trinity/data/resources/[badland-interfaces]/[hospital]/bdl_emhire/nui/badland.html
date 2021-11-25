@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>BDL Hire System</title>
+        <link rel="stylesheet" type="text/css" href="badland.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,700,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="actionmenu" style="display: none;">
+
+            <div class="helpContainerOverflow">
+                <div class="helpContainer">
+                    <div class="helpTitle">
+                        <p>Cargos</p>
+                        <img id="backButtonHelp" class="menuoption" data-action="" src="https://cdn.discordapp.com/attachments/740912067095035955/757991673816023250/unnamed.png">
+                    </div>
+                    <div class="helpDesc">
+                        <p>Explicação: <br> A administração de cargos funciona por um sistema simples de numeração em ordem crescente proporcional ao cargo deferido. A numeração vai de 1 a 6 referente aos possiveis cargos de contratação. </p>
+                    </div>
+                    <div class="helpDesc2">
+                        <p>1 - Estagiário(a) <br> 2 - Enfermeiro(a). <br> 3 - Paramédico(a). <br> 4 - Médico(a). <br> 5 - Clínico(a) Geral. </p>
+                    </div>
+
+                    <div class="helpDesc3">
+                        <p>OBS: Não se esqueça de colocar o passaporte do funcio-<br>nário que você quer administrar, não coloque caracteres especiais ou números negativos, Boa Sorte :D</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="overflowContainer">
+                <div class="mainContainer">
+                    <div class="mainContainerWithout">
+                        <div class="titleAboveContainer">
+                            <div class="closeBorders">
+                                <img id="closeButton" class="menuoption" data-action="fechar" src="https://cdn.discordapp.com/attachments/740912067095035955/757991673816023250/unnamed.png">
+                            
+                            </div>
+                            <div class="titleAboveContainerBorder">
+                                <div class="titleUnderScore"></div>
+                                <p>EMS - GERENCIAMENTO </p>
+                            </div>
+                        </div>
+
+                        <div class="actionSection">
+                            <div class="sectionTitle">
+                                <p>AÇÕES</p>
+                                <div class="sectionUnderScore"></div>
+                            </div>
+                            <span id="button1Style">
+                                <button class="hireOption"> Contratação </button>
+                            </span>
+                            <span id="button2Style">
+                                <button class="fireOption"> Exoneração </button>
+                            </span>
+                            <span id="button3Style">
+                                <button class="promoteOption"> Administração </button>
+                            </span>
+                            <div class="helpButtonAA">
+                                <img id="helpButton" src="https://cdn.discordapp.com/attachments/740912067095035955/757994477301268510/pngegg.png">
+                            </div>
+                        </div>
+
+                        <div class="infoSection">
+                            <div class="infoTitle">
+                                <p>SOBRE</p>
+                            </div>
+
+                            <div class="nome">
+                                <div class="nameTitle">
+                                    <p>VOCÊ É</p>
+                                </div>
+                                <div class="nameDesc">
+                                    <span> 0 </span>
+                                </div>
+                            </div>
+
+                            <div class="emprego">
+                                <div class="jobTitle">
+                                    <p>CARGO</p>
+                                </div>
+                                <div class="jobDesc">
+                                    <span> 0 </span>
+                                </div>
+                            </div>
+
+                            <div class="identidade">
+                                <div class="passTitle">
+                                    <p>DO PASSAPORTE</p>
+                                </div>
+                                <div class="passDesc">
+                                    Número (<span> 0</span>)
+                                </div>
+                            </div>
+
+                            <div class="idade">
+                                <div class="ageTitle">
+                                    <p>VOCÊ TEM</p>
+                                </div>
+                                <div class="ageDesc">
+                                    <span> 0</span> Anos
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <!-- CONTRATAR -->
+
+                    <div class="IDContainer" id="hireUI">
+                        <div class="IDContainerCont">
+                            <div class="HireDiv">
+                                <form id="contratar1">
+                                    <div class="containerHireTitle">
+                                        <p>Contratação</p>
+                                        <img id="backButtonHire" class="menuoption" data-action="" src="https://cdn.discordapp.com/attachments/740912067095035955/757991673816023250/unnamed.png">
+                                    </div>
+
+                                    <div class="form-hire-position">
+                                        <input id="position" type="text" placeholder="Na posição:">
+                                    </div>
+
+                                    <div class="form-hire-passport">
+                                        <input id="passport" type="number" placeholder="Passaporte:">
+                                    </div>
+
+                                    <div id="ButtonStyle" class="menuoption">
+                                        <button> Contratar </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- EXONERAR -->
+
+                    <div class="IDContainer" id="fireUI">
+                        <div class="IDContainerCont">
+                            <div class="HireDiv">
+                                <form id="demitir1">
+                                    <div class="containerFireTitle">
+                                        <p>Exoneração</p>
+                                        <img id="backButtonFire" class="menuoption" data-action="" src="https://cdn.discordapp.com/attachments/740912067095035955/757991673816023250/unnamed.png">
+                                    </div>
+
+                                    <div class="form-fire-passport">
+                                        <input id="passport-fire" type="number" placeholder="Passaporte:">
+                                    </div>
+
+                                    <div id="ButtonStyle" class="menuoption">
+                                        <button> Exonerar </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PROMOVER OU REBAIXAR -->
+
+                    <div class="IDContainer" id="promoteUI">
+                        <div class="IDContainerCont">
+                            <div class="HireDiv">
+                                <form id="promover1">
+                                    <div class="containerPromoteTitle">
+                                        <p>Administração</p>
+                                        <img id="backButtonPromote" class="menuoption" data-action="" src="https://cdn.discordapp.com/attachments/740912067095035955/757991673816023250/unnamed.png">
+                                    </div>
+
+                                    <div class="form-promote-position">
+                                        <input id="position-promote" type="number" placeholder="Promover/Rebaixar para:">
+                                    </div>
+
+                                    <div class="form-promote-passport">
+                                        <input id="passport-promote" type="number" placeholder="Passaporte:">
+                                    </div>
+
+                                    <div id="ButtonStyle" class="menuoption">
+                                        <button> Pronto </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="badland.js" type="text/javascript"></script>
+    </body>
+</html>

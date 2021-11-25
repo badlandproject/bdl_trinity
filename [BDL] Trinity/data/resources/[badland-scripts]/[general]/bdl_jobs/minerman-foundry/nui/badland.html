@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>E&G Creation</title>
+        <link rel="stylesheet" type="text/css" href="badland.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,700,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="actionmenu" style="display: none;">
+            <div class="mainContainer">
+                <div class="titleContainer">
+                    <p> FUNDIÇÃO DE MINÉRIOS </p>
+                    <!-- <div class="progressBarOut">
+                        <div class="progressBarIn"></div>
+                    </div> -->
+                </div>
+                <div class="contentContainer">
+				
+                    <div class="itemContainer">
+                        <div class="itemImage">
+                            <img src="img/ferro.png" alt="">
+                        </div>
+                        <div class="itemTitle">
+                            <span> Minério de Ferro </span>
+                        </div>
+                        <div class="recipeContainer">
+                            <div class="recipeTitle">
+                                <span> FUNDIDO </span>
+                            </div>
+                            <div class="firstRecipeItem">
+                                <img src="img/ferro2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="detailContainer">
+                            <div class="detailsTitle">
+                                <span> DETALHES </span>
+                            </div>
+                            <div class="productDetails">
+                                <p> Tempo de Fundição: 2m 25s <br> Pagamento p/unidade: $200,00 <br> Peso p/ unidade: 2 Kg </p>
+                            </div>
+                        </div>
+                        <div class="makeItContainer">
+                            <div class="makeItTitle">
+                                <span> PRODUÇÃO </span>
+                            </div>
+                            <div class="productionDetails">
+                                <p> - 5x Minério(s) de Ferro <br> + 1.000 Dólares </p>
+                            </div>
+                            <div id="productButton" class="menuoption" data-action="fundir-ferro">
+                                <span>FUNDIR</span>
+                            </div>
+                        </div>
+                    </div>
+					
+					<div class="itemContainer">
+                        <div class="itemImage">
+                            <img src="img/bronze.png" alt="">
+                        </div>
+                        <div class="itemTitle">
+                            <span> Minério de Bronze </span>
+                        </div>
+                        <div class="recipeContainer">
+                            <div class="recipeTitle">
+                                <span> FUNDIDO </span>
+                            </div>
+                            <div class="firstRecipeItem">
+                                <img src="img/bronze2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="detailContainer">
+                            <div class="detailsTitle">
+                                <span> DETALHES </span>
+                            </div>
+                            <div class="productDetails">
+                                <p> Tempo de Fundição: 2m 45s <br> Pagamento p/unidade: $300,00 <br> Peso p/ unidade: 1.6 Kg </p>
+                            </div>
+                        </div>
+                        <div class="makeItContainer">
+                            <div class="makeItTitle">
+                                <span> PRODUÇÃO </span>
+                            </div>
+                            <div class="productionDetails">
+                                <p> - 5x Minério(s) de Bronze <br> + 1.500 Dólares </p>
+                            </div>
+                            <div id="productButton" class="menuoption" data-action="fundir-bronze">
+                                <span>FUNDIR</span>
+                            </div>
+                        </div>
+                    </div>
+					
+					<div class="itemContainer">
+                        <div class="itemImage">
+                            <img src="img/ouro.png" alt="">
+                        </div>
+                        <div class="itemTitle">
+                            <span> Minério de Ouro </span>
+                        </div>
+                        <div class="recipeContainer">
+                            <div class="recipeTitle">
+                                <span> FUNDIDO </span>
+                            </div>
+                            <div class="firstRecipeItem">
+                                <img src="img/ouro2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="detailContainer">
+                            <div class="detailsTitle">
+                                <span> DETALHES </span>
+                            </div>
+                            <div class="productDetails">
+                                <p> Tempo de Fundição: 1m 25s <br> Pagamento p/unidade: $800,00 <br> Peso p/ unidade: 1.2 Kg </p>
+                            </div>
+                        </div>
+                        <div class="makeItContainer">
+                            <div class="makeItTitle">
+                                <span> PRODUÇÃO </span>
+                            </div>
+                            <div class="productionDetails">
+                                <p> - 5x Minério(s) de Ouro <br> + 4.000 Dólares </p>
+                            </div>
+                            <div id="productButton" class="menuoption" data-action="fundir-ouro">
+                                <span>FUNDIR</span>
+                            </div>
+                        </div>
+                    </div>
+					
+					<div class="itemContainer">
+                        <div class="itemImage">
+                            <img src="img/diamante.png" alt="">
+                        </div>
+                        <div class="itemTitle">
+                            <span> Minério de Diamante </span>
+                        </div>
+                        <div class="recipeContainer">
+                            <div class="recipeTitle">
+                                <span> GARIMPADO </span>
+                            </div>
+                            <div class="firstRecipeItem">
+                                <img src="img/diamante2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="detailContainer">
+                            <div class="detailsTitle">
+                                <span> DETALHES </span>
+                            </div>
+                            <div class="productDetails">
+                                <p> Tempo de Fundição: 3m 20s <br> Pagamento p/unidade: $5000,00 <br> Peso p/ unidade: 0.8 Kg </p>
+                            </div>
+                        </div>
+                        <div class="makeItContainer">
+                            <div class="makeItTitle">
+                                <span> PRODUÇÃO </span>
+                            </div>
+                            <div class="productionDetails">
+                                <p> - 2x Minério(s) de Diamante <br> + 10.000 Dólares </p>
+                            </div>
+                            <div id="productButton" class="menuoption" data-action="garimpar">
+                                <span>GARIMPAR</span>
+                            </div>
+                        </div>
+                    </div>
+					
+					
+					
+                </div>
+            </div>
+        </div>
+        <script src="badland.js" type="text/javascript"></script>
+    </body>
+</html>

@@ -1,0 +1,916 @@
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    user-select: none;
+    box-sizing: border-box;
+}
+
+button {
+    position: absolute;
+    background: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    color: rgba(255,255,255,0.45);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1vw;
+    left: 0vw;
+    top: 0vw;
+    outline: none;
+    transition: 0.25s;
+}
+
+button:hover {
+    color: rgba(255,255,255,0.8);
+    transition: 0.25s;
+}
+
+.mainContainerWithout {
+    position: absolute;
+    background-color: rgba(0,0,0,0.3);
+    width: 80vw;
+    height: 35vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.titleAboveContainer {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    width: 80vw;
+    height: 5vw;
+}
+
+.titleAboveContainerBorder {
+    position: absolute;
+    background-color: rgba(0,0,0,0);
+    width: 18.5vw;
+    height: 5vw;
+    border-right: 1px solid transparent;
+    -moz-border-image: -moz-linear-gradient(top, rgba(0,0,0,0) 10%,  rgba(255,255,255,0.3) 50%, rgba(0,0,0,0) 90%);
+    -webkit-border-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 10%,  rgba(255,255,255,0.3) 50%, rgba(0,0,0,0) 90%);
+    border-image: linear-gradient(to bottom, rgba(0,0,0,0) 10%,  rgba(255,255,255,0.3) 50%, rgba(0,0,0,0) 90%);
+    border-image-slice: 1;
+}
+
+.titleAboveContainer p {
+    position: absolute;
+    left: 0.8vw;
+    color: rgba(255,255,255,0.8);
+    font-family: Poppins, sans-serif;
+    font-size: 1.5vw;
+
+}
+
+
+#closeButton {
+    position: absolute;
+    opacity: 0.5;
+    height: 2vw;
+    width: 2vw;
+    left: 96%;
+    top: 32%;
+    transition: 0.25s;
+}
+
+#closeButton:hover {
+    transform: scale(1.05,1.05);
+    opacity: 0.8;
+    transition: 0.25s;
+}
+
+#creditsButton {
+    position: absolute;
+    opacity: 0.5;
+    height: 2vw;
+    width: 2vw;
+    left: 92%;
+    top: 29.7%;
+    transition: 0.25s;
+}
+
+#creditsButton:hover {
+    transform: scale(1.05,1.05);
+    opacity: 0.8;
+    transition: 0.25s;
+}
+
+#helpButton {
+    position: absolute;
+    opacity: 0.5;
+    height: 1.5vw;
+    width: 1.5vw;
+    left: 2%;
+    top: 94%;
+    transition: 0.25s;
+}
+
+#helpButton:hover {
+    transform: scale(1.05,1.05);
+    opacity: 0.8;
+    transition: 0.25s;
+}
+
+.actionSection {
+    position: absolute;
+    background-color: rgba(0,0,0,0.0);
+    width: 18.5vw;
+    height: 30vw;
+    top: 5vw;
+    border-right: 1px solid transparent;
+    -moz-border-image: -moz-linear-gradient(top, rgba(0,0,0,0) 1%,  rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 100%);
+    -webkit-border-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 1%,  rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 100%);
+    border-image: linear-gradient(to bottom, rgba(0,0,0,0) 1%,  rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 100%);
+    border-image-slice: 1;
+}
+
+#button1Style {
+    position: absolute;
+    background-color: rgba(0,0,0,0.65);
+    height: 4vw;
+    width: 12vw;
+    transition: 0.25s;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+}
+
+#button1Style:hover {
+    /* transform: scale(1.05,1.05); */
+    background-color: rgba(0,0,0,0.75);
+    color: rgba(255,255,255,0.5);
+}
+
+#button2Style {
+    position: absolute;
+    background-color: rgba(0,0,0,0.65);
+    height: 4vw;
+    width: 12vw;
+    transition: 0.25s;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+
+#button2Style:hover {
+    background-color: rgba(0,0,0,0.75);
+    color: rgba(255,255,255,0.9);
+}
+
+#button3Style {
+    position: absolute;
+    background-color: rgba(0,0,0,0.65);
+    height: 4vw;
+    width: 12vw;
+    transition: 0.25s;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+
+#button3Style:hover {
+    background-color: rgba(0,0,0,0.75);
+    color: rgba(255,255,255,0.9);
+}
+
+#hireTextArea {
+    position: absolute;
+    top: 125%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sectionTitle p {
+    position: absolute;
+    left: 1vw;
+    color: rgba(255,255,255,0.8);
+    font-family: Poppins, sans-serif;
+    font-size: 1.5vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sectionTitle {
+    position: absolute;
+    background-color: rgba(0,0,0,0.0);
+    width: 18.5vw;
+    height: 3.3vw;
+    border-bottom: 10px solid;
+    border-image-slice: 1;
+    border-width: 1px;
+    border-image-source: linear-gradient(to left, rgba(0,0,0,0) 1%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 99%);
+}
+
+.infoSection {
+    position: absolute;
+    background-color: rgba(0,0,0,0.0);
+    width: 27vw;
+    height: 100%;
+    top: 5vw;
+    left: 25vw;
+    border-right: 1px solid transparent;
+    -moz-border-image: -moz-linear-gradient(top, rgba(0,0,0,0) 1%,  rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 100%);
+    -webkit-border-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 1%,  rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 100%);
+    border-image: linear-gradient(to bottom, rgba(0,0,0,0) 1%,  rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 100%);
+    border-image-slice: 1;
+}
+
+.infoTitle p {
+    position: absolute;
+    left: 1vw;
+    color: rgba(255,255,255,0.8);
+    font-family: Poppins, sans-serif;
+    font-size: 1.5vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.infoTitle {
+    position: absolute;
+    background-color: rgba(0,0,0,0.0);
+    width: 27vw;
+    height: 3.3vw;
+    border-bottom: 10px solid;
+    border-image-slice: 1;
+    border-width: 1px;
+    left: -3vw;
+    border-image-source: linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0,0,0,0) 100%);
+}
+
+.querySection {
+    position: absolute;
+    background-color: rgba(0,0,0,0.0);
+    width: 27vw;
+    height: 100%;
+    top: 5vw;
+    left: 55vw;
+    -moz-border-image: -moz-linear-gradient(top, rgba(0,0,0,0) 1%,  rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 100%);
+    -webkit-border-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 1%,  rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 100%);
+    border-image: linear-gradient(to bottom, rgba(0,0,0,0) 1%,  rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 100%);
+    border-image-slice: 1;
+}
+
+.queryTitle p {
+    position: absolute;
+    left: 1vw;
+    color: rgba(255,255,255,0.8);
+    font-family: Poppins, sans-serif;
+    font-size: 1.5vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.queryTitle {
+    position: absolute;
+    background-color: rgba(0,0,0,0.0);
+    width: 27vw;
+    height: 3.3vw;
+    border-bottom: 10px solid;
+    border-image-slice: 1;
+    border-width: 1px;
+    left: -3vw;
+    border-image-source: linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0,0,0,0) 100%);
+}
+
+#queryButtonStyle {
+    position: absolute;
+    background-color: rgba(0,0,0,0.35);
+    height: 3vw;
+    width: 8vw;
+    transition: 0.25s;
+    left: 25%;
+    top: 50%;
+    transform: translate();
+}
+
+#queryButtonStyle:hover {
+    /* transform: scale(1.05,1.05); */
+    background-color: rgba(0,0,0,0.45);
+    color: rgba(255,255,255,0.5);
+}
+
+.form-query-registration{
+    position: absolute;
+    width: 10vw;
+    left: 20%;
+    top: 15%;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    transition: all .2s ease-in-out;
+}
+
+.form-query-registration:hover{
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,0.7);
+    
+}
+
+.form-query-passport{
+    position: absolute;
+    width: 10vw;
+    left: 20%;
+    top: 35%;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    transition: all .2s ease-in-out;
+}
+
+.form-query-passport:hover{
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,0.7);
+    
+}
+
+.nameTitle {
+    position: absolute;
+    left: 1vw;
+    color: rgba(255,255,255,0.8);
+    font-family: Poppins, sans-serif;
+    font-size: 0.9vw;
+    font-weight: 500;
+    left: -12.5%;
+    top: 13%;
+    transform: translate(-50%, -50%);
+}
+
+.nameDesc {
+    position: absolute;
+    left: 1vw;
+    color: rgba(255,255,255,0.8);
+    font-family: Poppins, sans-serif;
+    font-size: 1.15vw;
+    font-weight: 500;
+    left: -18.1%;
+    top: 15%;
+}
+
+.jobTitle {
+    position: absolute;
+    left: 1vw;
+    color: rgba(255,255,255,0.8);
+    font-family: Poppins, sans-serif;
+    font-size: 0.9vw;
+    font-weight: 500;
+    left: -12.25%;
+    top: 28%;
+    transform: translate(-50%, -50%);
+}
+
+.jobDesc {
+    position: absolute;
+    left: 1vw;
+    color: rgba(255,255,255,0.8);
+    font-family: Poppins, sans-serif;
+    font-size: 1.15vw;
+    font-weight: 500;
+    left: -18.1%;
+    top: 30%;
+}
+
+.passTitle {
+    position: absolute;
+    left: 1vw;
+    color: rgba(255,255,255,0.8);
+    font-family: Poppins, sans-serif;
+    font-size: 0.9vw;
+    font-weight: 500;
+    left: -5.2%;
+    top: 42%;
+    transform: translate(-50%, -50%);
+}
+
+.passDesc {
+    position: absolute;
+    left: 2vw;
+    color: rgba(255,255,255,0.8);
+    font-family: Poppins, sans-serif;
+    font-size: 1.15vw;
+    font-weight: 500;
+    left: -18.1%;
+    top: 44%;
+}
+
+.ageTitle {
+    position: absolute;
+    left: 1vw;
+    color: rgba(255,255,255,0.8);
+    font-family: Poppins, sans-serif;
+    font-size: 0.9vw;
+    font-weight: 500;
+    left: -10.1%;
+    top: 56%;
+    transform: translate(-50%, -50%);
+}
+
+.ageDesc {
+    position: absolute;
+    left: 2vw;
+    color: rgba(255,255,255,0.8);
+    font-family: Poppins, sans-serif;
+    font-size: 1.15vw;
+    font-weight: 500;
+    left: -18.1%;
+    top: 58%;
+}
+
+.IDContainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.IDContainerCont {
+    position: absolute;
+    background-color: rgba(0,0,0,0.3);
+    height: 20vw;
+    width: 25vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.containerHireTitle {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    width: 25vw;
+    height: 2.5vw;
+    left: 50%;
+    top: 1.2vw;
+    transform: translate(-50%, -50%);
+}
+
+.containerHireTitle p {
+    position: absolute;
+    font-family: Poppins, sans-serif;
+    font-size: 1.5vw;
+    top: -1.5vw;
+    left: 0.5vw;
+    line-height: 2.5vw;
+    color: rgba(255,255,255,0.5);
+}
+
+.containerFireTitle {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    width: 25vw;
+    height: 2.5vw;
+    left: 50%;
+    top: 1.2vw;
+    transform: translate(-50%, -50%);
+}
+
+.containerFireTitle p {
+    position: absolute;
+    font-family: Poppins, sans-serif;
+    font-size: 1.5vw;
+    top: -1.5vw;
+    left: 0.5vw;
+    line-height: 2.5vw;
+    color: rgba(255,255,255,0.5);
+}
+
+.containerPromoteTitle {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    width: 25vw;
+    height: 2.5vw;
+    left: 50%;
+    top: 1.2vw;
+    transform: translate(-50%, -50%);
+}
+
+.containerPromoteTitle p {
+    position: absolute;
+    font-family: Poppins, sans-serif;
+    font-size: 1.5vw;
+    top: -1.5vw;
+    left: 0.5vw;
+    line-height: 2.5vw;
+    color: rgba(255,255,255,0.5);
+}
+
+.form-hire-position{
+    position: absolute;
+    width: 10vw;
+    top: 35%;
+    left: 50%;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    color: transparent;
+    transition: all .2s ease-in-out;
+    transform: translate(-50%, -50%);
+}
+
+.form-hire-passport{
+    position: absolute;
+    width: 10vw;
+    left: 50%;
+    top: 65%;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    transition: all .2s ease-in-out;
+    transform: translate(-50%, -50%);
+}
+
+.form-hire-position:hover{
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,0.7);
+    
+}
+
+.form-hire-passport:hover{
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,0.7);
+    
+    
+}
+
+.form-fire-position{
+    position: absolute;
+    width: 10vw;
+    top: 35%;
+    left: 50%;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    color: transparent;
+    transition: all .2s ease-in-out;
+    transform: translate(-50%, -50%);
+}
+
+.form-fire-passport{
+    position: absolute;
+    width: 10vw;
+    left: 50%;
+    top: 45%;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    transition: all .2s ease-in-out;
+    transform: translate(-50%, -50%);
+}
+
+.form-fire-position:hover{
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,0.7);
+    
+}
+
+.form-fire-passport:hover{
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,0.7);
+}
+
+.form-promote-position{
+    position: absolute;
+    width: 10vw;
+    top: 35%;
+    left: 50%;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    color: transparent;
+    transition: all .2s ease-in-out;
+    transform: translate(-50%, -50%);
+}
+
+.form-promote-passport{
+    position: absolute;
+    width: 10vw;
+    left: 50%;
+    top: 65%;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    transition: all .2s ease-in-out;
+    transform: translate(-50%, -50%);
+}
+
+.form-promote-position:hover{
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,0.7);
+    
+}
+
+.form-promote-passport:hover{
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,0.7);
+}
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  background: transparent;
+  margin: 0; 
+}
+
+input[type="number"]
+{
+    background: transparent;
+    border: none;
+}
+
+input[type="text"]
+{
+    background: transparent;
+    border: none;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+#hireUI {
+    display: none;
+}
+
+input{
+    border: none;
+    width: 10vw;
+    height: 1.5vw;
+    color: rgba(255,255,255,0.7);
+    font-size: 13;
+    text-decoration: none;
+    font-family: 'Roboto';
+}
+
+input:placeholder{
+    text-decoration: none;
+    color: rgba(255,255,255,0.7);
+}
+
+#ButtonStyle {
+    position: absolute;
+    background-color: rgba(0,0,0,0.65);
+    height: 2vw;
+    width: 8vw;
+    transition: 0.25s;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%, -50%);
+}
+
+#ButtonStyle:hover {
+    /* transform: scale(1.05,1.05); */
+    background-color: rgba(0,0,0,0.75);
+    color: rgba(255,255,255,0.5);
+}
+
+#backButtonHire {
+    position: absolute;
+    opacity: 0.5;
+    height: 1.5vw;
+    width: 1.5vw;
+    left: 92%;
+    top: 20%;
+    transition: 0.25s;
+}
+
+#helpImg {
+    position: absolute;
+    opacity: 0.5;
+    height: 1.5vw;
+    width: 1.5vw;
+    left: 83%;
+    top: 18%;
+    transition: 0.25s;
+}
+
+#helpImg:hover {
+    transform: scale(1.05,1.05);
+    opacity: 0.8;
+    transition: 0.25s;
+}
+
+#helpImgFire {
+    position: absolute;
+    opacity: 0.5;
+    height: 1.5vw;
+    width: 1.5vw;
+    left: 83%;
+    top: 18%;
+    transition: 0.25s;
+}
+
+#helpImgFire:hover {
+    transform: scale(1.05,1.05);
+    opacity: 0.8;
+    transition: 0.25s;
+}
+
+#helpImgPromote {
+    position: absolute;
+    opacity: 0.5;
+    height: 1.5vw;
+    width: 1.5vw;
+    left: 83%;
+    top: 18%;
+    transition: 0.25s;
+}
+
+#helpImgPromote:hover {
+    transform: scale(1.05,1.05);
+    opacity: 0.8;
+    transition: 0.25s;
+}
+
+#backButtonHire:hover {
+    transform: scale(1.05,1.05);
+    opacity: 0.8;
+    transition: 0.25s;
+}
+
+#backButtonFire {
+    position: absolute;
+    opacity: 0.5;
+    height: 1.5vw;
+    width: 1.5vw;
+    left: 92%;
+    top: 20%;
+    transition: 0.25s;
+}
+
+#backButtonFire:hover {
+    transform: scale(1.05,1.05);
+    opacity: 0.8;
+    transition: 0.25s;
+}
+
+#backButtonHelp {
+    position: absolute;
+    opacity: 0.5;
+    height: 1.5vw;
+    width: 1.5vw;
+    left: 92%;
+    top: 20%;
+    transition: 0.25s;
+}
+
+#backButtonHelp:hover {
+    transform: scale(1.05,1.05);
+    opacity: 0.8;
+    transition: 0.25s;
+}
+
+#backButtonQuery {
+    position: absolute;
+    opacity: 0.5;
+    height: 1.5vw;
+    width: 1.5vw;
+    left: 92%;
+    top: 20%;
+    transition: 0.25s;
+}
+
+#backButtonQuery:hover {
+    transform: scale(1.05,1.05);
+    opacity: 0.8;
+    transition: 0.25s;
+}
+
+#backButtonPromote {
+    position: absolute;
+    opacity: 0.5;
+    height: 1.5vw;
+    width: 1.5vw;
+    left: 92%;
+    top: 20%;
+    transition: 0.25s;
+}
+
+#backButtonPromote:hover {
+    transform: scale(1.05,1.05);
+    opacity: 0.8;
+    transition: 0.25s;
+}
+
+.helpContainer {
+    position: absolute;
+    height: 26vw;
+    width: 20vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0,0.3);
+}
+
+.helpTitle {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 20vw;
+    height: 2.5vw;
+}
+
+.helpTitle p {
+    position: absolute;
+    font-family: Poppins, sans-serif;
+    font-size: 1.5vw;
+    top: -1.5vw;
+    left: 0.5vw;
+    line-height: 2.5vw;
+    color: rgba(255,255,255,0.5);
+}
+
+.helpDesc {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.0);
+    width: 20vw;
+    height: 28.5vw;
+    top: 2.5vw;
+}
+
+.helpDesc p {
+    position: absolute;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.8vw;
+    left: 0.5vw;
+    line-height: 1vw;
+    color: rgba(255,255,255,0.5);
+}
+
+.helpDesc2 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.0);
+    width: 20vw;
+    height: 28.5vw;
+    top: 8vw;
+}
+
+.helpDesc2 p {
+    position: absolute;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2vw;
+    left: 0.5vw;
+    line-height: 2vw;
+    color: rgba(255,255,255,0.5);
+}
+
+.helpDesc3 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.0);
+    width: 20vw;
+    height: 28.5vw;
+    top: 21vw;
+}
+
+.helpDesc3 p {
+    position: absolute;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.8vw;
+    left: 0.5vw;
+    line-height: 1vw;
+    color: rgba(255,255,255,0.5);
+}
+
+.queryContainer {
+    position: absolute;
+    height: 26vw;
+    width: 20vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0,0.20);
+}
+
+.queryContainerTitle{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 20vw;
+    height: 2.5vw;
+}
+
+.queryContainerTitle p {
+    position: absolute;
+    font-family: Poppins, sans-serif;
+    font-size: 1.5vw;
+    top: -1.5vw;
+    left: 0.5vw;
+    line-height: 2.5vw;
+    color: rgba(255,255,255,0.5);
+}
+
+.resultStyle {
+    margin-top: 8.5vw;
+    margin-left: -1vw;
+}
+
+.resultStyle h1 {
+    color: rgba(255,255,255,0.5);
+    font-size: 1vw;
+}
+
+.resultStyle span {
+    color: rgba(255,255,255,0.5);
+    margin-top: 1vw;
+    font-size: 0.9vw;
+}
+

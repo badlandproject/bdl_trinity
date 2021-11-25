@@ -1,0 +1,35 @@
+﻿Baixe os artefatos: (Versão da sua escolha)
+https://runtime.fivem.net/artifacts/fivem/build_server_windows/master/
+
+Coloque-os dentro de uma pasta nomeada como 'artifacts' e coloque juntamente com a pasta data & mysql (não dentro, junto)
+
+Coloque sua API Key da steam e sua key do FiveM no register.cfg dentro da pasta config-files (em data)
+
+Execute o main.sql dentro de um banco de dados nomeado como 'badland' (Não recomendado trocar)
+
+Coloque as pastas de imagem dentro do C:/xampp > htdocs
+Troque o IP de origem das imagens dos scripts (inventário, garagem, concessionária) no .js dos arquivos
+Relacionado à inventário > [badland-scripts] > [inventory] > bdl_inventory, bdl_chest, vrp_trunkchest, vrp_homes
+Relacionado às garagens > [badland-scripts] > [garages] > bdl_garages, bdl_dealership
+NÃO RENOMEIE AS PASTAS!!!!
+
+TUDO relacionado a framework & sistemas gerais (padrão) pode ser encontrado em [badland-framework]
+TUDO relacionado a interfaces em geral podem ser encontrados em [badland-interfaces]
+TUDO relacionado a sistemas com ou sem NUIs podem ser encontrados em [badland-scripts]
+TUDO relacionado a modelos, texturas, mapas, podem ser encontrados em [badland-models]
+TUDO relacionado a raíz, arquivos essenciais do sistema & do FiveM podem ser encontrados em [badland-essentials]
+
+O VOIP recomendado para a base é o tokovoip (utilize o script que vem juntamente com a base)
+
+RECOMENDA-SE:
+
+- A troca dos veiculos da polícia (modelos obsoletos)
+- Adição de novos mapas
+- Revisão da economia
+
+**NÃO** RECOMENDA-SE:
+
+- Alteração de códigos essenciais.
+- Uso de mumble-voip. (devido à incompatibilidade do GCPhone & outros problemas relacionados ao sistema)
+- Mudança da estrutura organizacional tanto dos arquivos de configuração, quanto dos arquivos gerais.
+- Uso compartilhado do produto.

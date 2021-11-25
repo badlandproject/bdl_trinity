@@ -1,0 +1,259 @@
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.mainContainer {
+    position: absolute;
+    width: 60vw;
+    height: 35vw;
+    background-color: rgba(0,0,0,0.25);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius:5px;
+}
+
+.titleContainer {
+    position: absolute;
+    width: 60vw;
+    height: 4vw;
+    background-color: rgba(0,0,0,0.6);
+    border-radius:5px;
+    text-align: center;
+}
+
+#titleText p {
+    font-family: Poppins, sans-serif;
+    color: rgba(255,255,255,0.75);
+    font-size: 1.75vw;
+    margin-top: 0.8vw;
+}
+
+.belowContainer {
+    position: absolute;
+    top: 4.5vw;
+    width: 60vw;
+    height: 30.5vw;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.actionButtons {
+    position: absolute;
+    width: 60vw;
+    height: 5vw;
+    background-color: rgba(0,0,0,0);
+}
+
+#firstActButton {
+    float: left;
+    width: 12vw;
+    height: 4vw;
+    background-color: rgba(0,0,0,0.5);
+    border-top-left-radius: 5px;
+    border-right: 1px solid transparent;
+    -moz-border-image: -moz-linear-gradient(top, rgba(0,0,0,0) 10%,  rgba(255,255,255,0.5) 50%, rgba(0,0,0,0) 90%);
+    -webkit-border-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 10%,  rgba(255,255,255,0.5) 50%, rgba(0,0,0,0) 90%);
+    border-image: linear-gradient(to bottom, rgba(0,0,0,0) 10%,  rgba(255,255,255,0.5) 50%, rgba(0,0,0,0) 90%);
+    border-image-slice: 1;
+    text-align: center;
+    transition: 0.25s;
+}
+
+#firstActButton p {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgba(255,255,255,0.6);
+    font-size: 1.15vw;
+    font-weight: 500;
+    transition: 0.25s;
+}
+
+#firstActButton:hover {
+    background-color: rgba(0,0,0,0.75);
+    transition: 0.25s;
+}
+
+#firstActButton:hover p {
+    color: rgba(255,255,255,0.9);
+    transition: 0.25s;
+}
+#actButton {
+    float: left;
+    width: 12vw;
+    height: 4vw;
+    background-color: rgba(0,0,0,0.5);
+    
+    border-right: 1px solid transparent;
+    -moz-border-image: -moz-linear-gradient(top, rgba(0,0,0,0) 10%,  rgba(255,255,255,0.5) 50%, rgba(0,0,0,0) 90%);
+    -webkit-border-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 10%,  rgba(255,255,255,0.5) 50%, rgba(0,0,0,0) 90%);
+    border-image: linear-gradient(to bottom, rgba(0,0,0,0) 10%,  rgba(255,255,255,0.5) 50%, rgba(0,0,0,0) 90%);
+    border-image-slice: 1;
+    text-align: center;
+    transition: 0.25s;
+}
+
+#actButton p {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgba(255,255,255,0.6);
+    font-size: 1.15vw;
+    font-weight: 500;
+    transition: 0.25s;
+}
+
+#actButton:hover {
+    background-color: rgba(0,0,0,0.75);
+    transition: 0.25s;
+}
+
+#actButton:hover p {
+    color: rgba(255,255,255,0.9);
+    transition: 0.25s;
+}
+
+#lastActButton {
+    float: left;
+    width: 12vw;
+    height: 4vw;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    transition: 0.25s;
+}
+
+#lastActButton p {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgba(255,255,255,0.6);
+    font-size: 1.15vw;
+    font-weight: 500;
+    transition: 0.25s;
+}
+
+#lastActButton:hover {
+    background-color: rgba(0,0,0,0.75);
+    transition: 0.25s;
+}
+
+#lastActButton:hover p {
+    color: rgba(255,255,255,0.9);
+    transition: 0.25s;
+}
+
+.contentContainer {
+    position: absolute;
+    width: 59vw;
+    height: 25.5vw;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 5px;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 56%;
+}
+
+.above {
+    width: 59vw;
+    height: 12.25vw;
+    background-color: rgba(0,0,0,0.0);
+    border-bottom: 2px solid;
+    border-image-slice: 1;
+    border-width: 1px;
+    border-image-source: linear-gradient(to left, rgba(0,0,0,0) 1%, rgba(255,255,255,0.5) 50%, rgba(0,0,0,0) 99%);
+}
+
+.bottom {
+    width: 59vw;
+    height: 12.25vw;
+    background-color: rgba(0,0,0,0.0);
+}
+
+.recipe {
+    width: 59vw;
+    height: 12.25vw;
+    background-color: rgba(0,0,0,0.0);
+    text-align: center;
+}
+
+.recipe p {
+    margin-top: 0.5vw;
+    color: rgba(255,255,255,0.75);
+    font-family: Poppins, sans-serif;
+    font-size: 1.1vw;
+    transition: 0.25s;
+}
+
+#item {
+    float: left;
+    width: 11vw;
+    height: 11vw;
+    background-color: transparent;
+    border-radius: 5px;
+    margin-left: 0.65vw;
+    margin-top: 0.4vw;
+    text-align: center;
+    transition: 0.25s;
+}
+
+#itemBot {
+    float: left;
+    width: 11vw;
+    height: 10vw;
+    background-color: transparent;
+    border-radius: 5px;
+    margin-left: 0.65vw;
+    margin-top: 0vw;
+    text-align: center;
+    transition: 0.25s;
+}
+
+#itemBot:hover img {
+    opacity: 1;
+    transition: 0.25s;
+}
+
+#itemBot:hover p {
+    color: #fff;
+    transition: 0.25s;
+}
+
+#item p {
+    margin-top: 0.5vw;
+    color: rgba(255,255,255,0.75);
+    font-family: Poppins, sans-serif;
+    font-size: 0.99vw;
+    transition: 0.25s;
+}
+
+.itemImage img {
+    width: 10vw;
+    margin-top: 2vw;
+    transition: 0.25s;
+	opacity: 0.75;
+}
+
+#handgun {
+	width: 6vw;
+	margin-top: 0.9vw;
+}
+
+#armor {
+	width: 7vw;
+	margin-top: 0vw;
+}
+
+#item:hover img {
+    opacity: 1;
+	transform: scale(1.05,1.05);
+    transition: 0.25s;
+}
+
+#item:hover p {
+    color: #fff;
+    transition: 0.25s;
+}

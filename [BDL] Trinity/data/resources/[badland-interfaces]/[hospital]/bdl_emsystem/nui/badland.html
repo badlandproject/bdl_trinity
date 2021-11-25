@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cloakroom</title>
+        <link rel="stylesheet" type="text/css" href="badland.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,700,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="actionmenu" style="display: none;">
+            <div class="mainContainer">
+                <div class="titleContainer">
+                    <div id="titleText">
+                        <p> EMS - Sistema </p>
+                    </div>
+                </div>
+
+                <div class="belowContainer">
+                    <div class="actionButtons">
+                        <div class="menuoption" data-action="on-service" id="firstActButton">
+                            <p> Entrar em Serviço </p>
+                        </div>
+                        <div class="menuoption" data-action="off-service" id="actButton">
+                            <p> Sair de Serviço </p>
+                        </div>
+                        <div class="menuoption" data-action="take-kit" id="actButton">
+                            <p> Pegar Kit de Defesa </p>
+                        </div>
+                        <div class="menuoption" data-action="rem-kit" id="actButton">
+                            <p> Guardar Kit de Defesa </p>
+                        </div>
+                        <div class="menuoption" data-action="clear-med" id="lastActButton">
+                            <p> Rem. Medicamento (1x) </p>
+                        </div>
+                    </div>
+
+                    <div class="contentContainer">
+                        <div class="medicine">
+                            <div id="item" class="menuoption" data-action="dorflex">
+                                <p> Dorflex </p>
+                                <div class="itemImage">
+                                    <img src="https://cdn.discordapp.com/attachments/740912067095035955/780895606066380810/dorflex.png" alt="">
+                                </div>
+                            </div>
+                            <div id="item" class="menuoption" data-action="voltaren">
+                                <p> Voltaren </p>
+                                <div class="itemImage">
+                                    <img src="https://cdn.discordapp.com/attachments/740912067095035955/780995697892917258/voltaren.png" alt="">
+                                </div>
+                            </div>
+                            <div id="item" class="menuoption" data-action="tandrilax">
+                                <p> Tandrilax </p>
+                                <div class="itemImage">
+                                    <img src="https://cdn.discordapp.com/attachments/740912067095035955/780995508935327754/tandrilax.png" alt="">
+                                </div>
+                            </div>
+                            <div id="item" class="menuoption" data-action="buscopan">
+                                <p> Buscopan </p>
+                                <div class="itemImage">
+                                    <img src="https://cdn.discordapp.com/attachments/740912067095035955/780894399638011955/voltaren.png" alt="">
+                                </div>
+                            </div>
+                            <div id="item" class="menuoption" data-action="paracetamol">
+                                <p> Paracetamol </p>
+                                <div class="itemImage">
+                                    <img src="https://cdn.discordapp.com/attachments/740912067095035955/780995956123893861/paracetamol.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="recipe">
+                            <p>Receituários</p>
+                            <div id="itemBot" class="menuoption" data-action="r-dorflex">
+                                <div class="itemImage">
+                                    <img src="https://cdn.discordapp.com/attachments/740912067095035955/780997186518515762/r-dorflex.png" alt="">
+                                </div>
+                            </div>
+                            <div id="itemBot" class="menuoption" data-action="r-voltaren">
+                                <div class="itemImage">
+                                    <img src="https://cdn.discordapp.com/attachments/740912067095035955/780995715610574869/r-voltaren.png" alt="">
+                                </div>
+                            </div>
+                            <div id="itemBot" class="menuoption" data-action="r-tandrilax">
+                                <div class="itemImage">
+                                    <img src="https://cdn.discordapp.com/attachments/740912067095035955/780995592074821692/r-tandrilax.png" alt="">
+                                </div>
+                            </div>
+                            <div id="itemBot" class="menuoption" data-action="r-buscopan">
+                                <div class="itemImage">
+                                    <img src="https://cdn.discordapp.com/attachments/740912067095035955/780997249764950056/r-buscopan.png" alt="">
+                                </div>
+                            </div>
+                            <div id="itemBot" class="menuoption" data-action="r-paracetamol">
+                                <div class="itemImage">
+                                    <img src="https://cdn.discordapp.com/attachments/740912067095035955/780995956396523520/r-paracetamol.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="badland.js" type="text/javascript"></script>
+    </body>
+</html>
